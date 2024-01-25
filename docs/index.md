@@ -2,4 +2,4 @@
 
 Lightweight Embedded Assisted Driving System
 
-[GitHub](https://github.com/ProjectNeura/LEADS) | Reference [](LEADS_VeC)
+[GitHub](https://github.com/ProjectNeura/LEADS) | [](LEADS_VeC) | [ProjectNeura](https://projectneura.org)
