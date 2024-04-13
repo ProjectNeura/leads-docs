@@ -17,7 +17,7 @@ extensions = [
     "myst_parser",
     "autodoc2",
     "sphinx_design",
-    "sphinx.ext.intersphinx"
+    "sphinx.ext.intersphinx",
     "sphinx.ext.napoleon",
     "sphinx.ext.autodoc",
     "sphinx_copybutton"
