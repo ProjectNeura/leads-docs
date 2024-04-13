@@ -14,11 +14,11 @@ author = "ProjectNeura"
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
 extensions = [
+    "autodoc2"
     "myst_parser",
     "sphinx_design",
     "sphinx.ext.napoleon",
     "sphinx.ext.autodoc"
-    "autodoc2"
 ]
 myst_enable_extensions = ["colon_fence"]
 
