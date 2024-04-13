@@ -2,7 +2,7 @@
 
 Lightweight Embedded Assisted Driving System
 
-```{toctree}
+```{toctree::hidden}
 root_doc
 comm.md
 dt.md
