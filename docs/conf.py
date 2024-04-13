@@ -14,11 +14,13 @@ author = "ProjectNeura"
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
 extensions = [
-    "autodoc2"
     "myst_parser",
+    "autodoc2",
     "sphinx_design",
+    "sphinx.ext.intersphinx"
     "sphinx.ext.napoleon",
-    "sphinx.ext.autodoc"
+    "sphinx.ext.autodoc",
+    "sphinx_copybutton"
 ]
 myst_enable_extensions = ["colon_fence"]
 
@@ -26,6 +28,8 @@ templates_path = ["_templates"]
 exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
 
 autodoc2_packages = ["leads"]
+
+intersphinx_mapping = {"leads": ('https://raw.githubusercontent.com/ProjectNeura/LEADS/master/README.md', None)}
 
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output

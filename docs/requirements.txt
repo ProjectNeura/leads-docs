@@ -1,5 +1,6 @@
 leads
 myst_parser
-sphinx-design
-sphinx-book-theme
 sphinx-autodoc2
+sphinx-book-theme
+sphinx-copybutton
+sphinx-design
