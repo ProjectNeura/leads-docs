@@ -9,7 +9,7 @@ These codes are in "leads/comm/client".
 ## Create a Client
 
 :::{important}
-You should never manually instantiate a `Client`.
+You should never manually instantiate a {py:class}`Client`.
 :::
 
 ```python
