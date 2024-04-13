@@ -5,7 +5,6 @@ To be completed
 :::
 
 ```{toctree}
-index.md
 vec/index.md
 comm.md
 dt.md
