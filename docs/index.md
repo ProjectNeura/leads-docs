@@ -1,6 +1,8 @@
-# LEADS
+# LEADS: Lightweight Embedded Assisted Driving System
 
-Lightweight Embedded Assisted Driving System
+:::{attention}
+To be completed
+:::
 
 ```{toctree}
 index.md
