@@ -6,7 +6,7 @@ To be completed
 
 ```{toctree}
 vec/index.md
-comm.md
+comm/*
 dt.md
 ```
 
