@@ -1,5 +1,10 @@
 # LEADS: Lightweight Embedded Assisted Driving System
 
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/ProjectNeura/LEADS)
+![PyPI](https://img.shields.io/pypi/v/leads)
+![PyPI - Downloads](https://img.shields.io/pypi/dm/leads)
+![GitHub Release Date - Published_At](https://img.shields.io/github/release-date/ProjectNeura/LEADS)
+
 Build your race-ready electric car in 10 minutes with powerful electronic stability control and a modern dashboard.
 
 :::{note}
