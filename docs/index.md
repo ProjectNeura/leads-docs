@@ -8,7 +8,7 @@ To be completed
 vec/index.md
 comm/index.md
 dt.md
-apidocs/index
+apidocs
 ```
 
 [GitHub](https://github.com/ProjectNeura/LEADS) | [](LEADS_VeC) | [ProjectNeura](https://projectneura.org)
