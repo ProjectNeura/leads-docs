@@ -14,6 +14,9 @@ project = "LEADS"
 copyright = "ProjectNeura"
 author = "ProjectNeura"
 
+root_doc = "index"
+language = "en"
+
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
@@ -24,10 +27,25 @@ extensions = [
     "sphinx.ext.intersphinx",
     "sphinx.ext.viewcode",
     "sphinx.ext.napoleon",
-    "sphinx.ext.autodoc",
     "sphinx_copybutton"
 ]
-myst_enable_extensions = ["colon_fence"]
+myst_enable_extensions = [
+    "attrs_block",
+    "attrs_inline",
+    "amsmath",
+    "colon_fence",
+    "deflist",
+    "dollarmath",
+    "fieldlist",
+    "html_admonition",
+    "html_image",
+    "linkify",
+    "replacements",
+    "smartquotes",
+    "strikethrough",
+    "substitution",
+    "tasklist"
+]
 
 templates_path = ["_templates"]
 exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
