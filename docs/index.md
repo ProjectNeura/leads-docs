@@ -30,6 +30,6 @@ gui.md
 
 ```{toctree}
 :hidden:
-:caption: API Reference
+:caption: API
 apidocs/index
 ```
