@@ -3,10 +3,12 @@
 # For the full list of built-in configuration values, see the documentation:
 # https://www.sphinx-doc.org/en/master/usage/configuration.html
 
+from os.path import relpath
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 from sysconfig import get_paths
-_SITE_PACKAGES: str = get_paths()["purelib"]
+
+_SITE_PACKAGES: str = relpath(get_paths()["purelib"])
 
 
 project = "LEADS"
