@@ -1,10 +1,14 @@
-# Device Tree
+# Create a GUI Application
 
 LEADS implements a device tree system for each language variant. The device tree is an abstract layer between hardware
 platforms and the controlling program.
 
-:::{seealso}
-These codes are in "leads/dt".
+:::{note}
+
+```python
+from leads_gui import *
+```
+
 :::
 
 ## Inheritance

@@ -12,13 +12,20 @@ pip install leads
 
 ```{toctree}
 :hidden:
-:caption: 👍 LEADS VeC
+:caption: 👍 VeC
 vec/index.md
 ```
 
 ```{toctree}
 :hidden:
-:caption: LEADS Framework
-/index.md
+:caption: Framework
+context.md
 apidocs/leads
+```
+
+```{toctree}
+:hidden:
+:caption: GUI
+gui.md
+apidocs/leads_gui
 ```
