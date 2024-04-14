@@ -62,7 +62,7 @@ html_favicon = "_static/logo.png"
 html_theme = "sphinx_book_theme"
 html_theme_options = {
     "home_page_in_toc": True,
-    "github_url": "https://github.com/ProjectNeura/leads-docs",
+    "github_url": "https://github.com/ProjectNeura/LEADS",
     "repository_url": "https://github.com/ProjectNeura/leads-docs",
     "repository_branch": "master",
     "path_to_docs": "docs",
