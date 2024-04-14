@@ -30,9 +30,8 @@ extensions = [
     "sphinx_copybutton"
 ]
 myst_enable_extensions = [
-    "attrs_block",
-    "attrs_inline",
     "amsmath",
+    "attrs_inline",
     "colon_fence",
     "deflist",
     "dollarmath",
