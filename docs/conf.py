@@ -52,7 +52,7 @@ exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
 
 autodoc2_packages = [_SITE_PACKAGES + "/leads"]
 
-intersphinx_mapping = {"leads": ('https://raw.githubusercontent.com/ProjectNeura/LEADS/master/README.md', None)}
+intersphinx_mapping = {"leads": ('https://raw.githubusercontent.com/ProjectNeura/LEADS/master', "README.md")}
 
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
