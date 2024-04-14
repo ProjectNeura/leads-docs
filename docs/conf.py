@@ -5,6 +5,9 @@
 
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
+from sysconfig import get_paths
+_SITE_PACKAGES: str = get_paths()["purelib"]
+
 
 project = "LEADS"
 copyright = "ProjectNeura"
@@ -27,7 +30,7 @@ myst_enable_extensions = ["colon_fence"]
 templates_path = ["_templates"]
 exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
 
-autodoc2_packages = ["leads"]
+autodoc2_packages = [_SITE_PACKAGES + "/leads"]
 
 intersphinx_mapping = {"leads": ('https://raw.githubusercontent.com/ProjectNeura/LEADS/master/README.md', None)}
 
