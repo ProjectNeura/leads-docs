@@ -20,12 +20,16 @@ vec/index.md
 :hidden:
 :caption: Framework
 context.md
-apidocs/leads
 ```
 
 ```{toctree}
 :hidden:
 :caption: GUI
 gui.md
-apidocs/leads_gui
+```
+
+```{toctree}
+:hidden:
+:caption: API Reference
+apidocs/index
 ```
