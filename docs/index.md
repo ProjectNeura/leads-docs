@@ -1,15 +1,24 @@
 # LEADS: Lightweight Embedded Assisted Driving System
 
-:::{attention}
-To be completed
-:::
+Build your race-ready electric car in 10 minutes with powerful electronic stability control and a modern dashboard.
 
-```{toctree}
-:depth: 2
-vec/index.md
-comm/index.md
-dt.md
-apidocs
+## Installation
+
+### Python
+
+```shell
+pip install leads
 ```
 
-[GitHub](https://github.com/ProjectNeura/LEADS) | [](LEADS_VeC) | [ProjectNeura](https://projectneura.org)
+```{toctree}
+:hidden:
+:caption: 👍 LEADS VeC
+vec/index.md
+```
+
+```{toctree}
+:hidden:
+:caption: LEADS Framework
+/index.md
+apidocs/leads
+```
