@@ -5,6 +5,7 @@ To be completed
 :::
 
 ```{toctree}
+:depth: 2
 vec/index.md
 comm/index.md
 dt.md

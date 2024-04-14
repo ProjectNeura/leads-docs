@@ -10,7 +10,6 @@ from sysconfig import get_paths
 
 _SITE_PACKAGES: str = relpath(get_paths()["purelib"])
 
-
 project = "LEADS"
 copyright = "ProjectNeura"
 author = "ProjectNeura"
@@ -23,6 +22,7 @@ extensions = [
     "autodoc2",
     "sphinx_design",
     "sphinx.ext.intersphinx",
+    "sphinx.ext.viewcode",
     "sphinx.ext.napoleon",
     "sphinx.ext.autodoc",
     "sphinx_copybutton"
