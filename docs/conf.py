@@ -56,7 +56,7 @@ autodoc2_packages = [
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
-html_title = ""
+html_title = "LEADS Docs"
 html_logo = "_static/logo.png"
 html_favicon = "_static/logo.png"
 html_theme = "sphinx_book_theme"
