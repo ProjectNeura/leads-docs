@@ -56,10 +56,10 @@ autodoc2_packages = [
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
-html_theme = "sphinx_book_theme"
-html_static_path = ["_static"]
+html_title = ""
 html_logo = "_static/logo.png"
 html_favicon = "_static/logo.png"
+html_theme = "sphinx_book_theme"
 html_theme_options = {
     "home_page_in_toc": True,
     "github_url": "https://github.com/ProjectNeura/leads-docs",
@@ -71,3 +71,4 @@ html_theme_options = {
     "use_issues_button": True,
     "announcement": "Docs to be completed",
 }
+html_static_path = ["_static"]
