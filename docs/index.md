@@ -2,13 +2,13 @@
 
 Build your race-ready electric car in 10 minutes with powerful electronic stability control and a modern dashboard.
 
-## Installation
-
-### Python
-
+:::{note}
 ```shell
 pip install leads
 ```
+:::
+
+To get familiar with the framework, definitely check out our official example: [](LEADS_VeC).
 
 ```{toctree}
 :hidden:
@@ -20,6 +20,7 @@ vec/index.md
 :hidden:
 :caption: Framework
 context.md
+config.md
 ```
 
 ```{toctree}

@@ -14,4 +14,9 @@ We provide an event-oriented child implementation of [`Context`](#leads.Context)
 
 ```python
 from leads import LEADS
+
+
+context: LEADS = LEADS(initial_data=None,
+                       data_seq_size=100,
+                       num_laps_timed=3)
 ```
