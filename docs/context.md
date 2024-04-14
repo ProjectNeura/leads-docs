@@ -8,7 +8,8 @@ from leads import *
 
 This is where the magic happens. It is the representation of the vehicle in code.
 
-```{autoclass} leads.Context
+```{py:class} leads.Context
+:nocontentsentry:
 :show-inheritance:
 ```
 
@@ -16,7 +17,7 @@ This is where the magic happens. It is the representation of the vehicle in code
 
 We provide an even-oriented child class of [`Context`](#leads.Context): [`LEADS`](#leads.LEADS)
 
-```{autoclass} leads.LEADS
+```{py:class} leads.LEADS
 :show-inheritance:
 ```
 
