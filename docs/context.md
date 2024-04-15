@@ -1,6 +1,6 @@
 # Context and Events
 
-:::{note}
+:::{tip}
 
 ```python
 from leads import *
@@ -29,9 +29,12 @@ the update phase is when the data has been pre-processed and is parsed and affec
 
 A data container is a collection of data that is fed into the context. We provide a base class:
 [`DataContainer`](#leads.data.DataContainer). You can have your own implementation of
-[`DataContainer`](#leads.data.DataContainer) where you can add more attributes, but note that each time you push a data
-container to the context, it has to be either the same type or inherited from the type of the last pushed data
-container.
+[`DataContainer`](#leads.data.DataContainer) where you can add more attributes.
+
+:::{important}
+Note that each time you push a data container to the context, it has to be either the same type or inherited from the 
+type of the last pushed data container.
+:::
 
 ```python
 from leads import LEADS, DataContainer
@@ -63,7 +66,6 @@ context.update()
 ```python
 from typing import override
 from leads import LEADS, EventListener, UpdateEvent, L
-
 
 class MyEventListener(EventListener):
     @override

@@ -7,10 +7,12 @@
 
 Build your race-ready electric car in 10 minutes with powerful electronic stability control and a modern dashboard.
 
-:::{note}
+:::{tip}
+
 ```shell
 pip install leads
 ```
+
 :::
 
 To get familiar with the framework, definitely check out our official example: [LEADS VeC](#LEADS_VeC).
