@@ -67,7 +67,7 @@ context: LEADS = LEADS(initial_data=None,
 ### Assign an Event Listener
 
 [`EventListener`](#leads.EventListener) is the collection of callbacks for context. The following example logs 
-"Updating..." when [`context.update()`](#leads.LEADS.update) is called.
+"Updating..." when [`context.update()`](#leads.Context.update) is called.
 
 ```python
 from typing import override
