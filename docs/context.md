@@ -72,7 +72,6 @@ class MyEventListener(EventListener):
     def on_update(self, event: UpdateEvent) -> None:
         L.info("Updating...")
 
-
 context: LEADS = LEADS()
 context.set_event_listener(MyEventListener())
 ```
