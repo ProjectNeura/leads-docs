@@ -18,7 +18,7 @@ context: Context = Context(initial_data=None,
                            num_laps_timed=3)
 ```
 
-[`Context`](#leads.Context) is where the magic happens. It is the representation of the vehicle in code.
+[`Context`](#leads.context.Context) is where the magic happens. It is the representation of the vehicle in code.
 
 There are 2 phases in a context: push and update. The push phase is when the raw data are inputted. On the other hand,
 the update phase is when the data has been pre-processed and is parsed and affects the context.
@@ -26,9 +26,10 @@ the update phase is when the data has been pre-processed and is parsed and affec
 ## Push to the Context
 
 A data container is a collection of data that is fed into the context. We provide a base class:
-[`DataContainer`](#leads.DataContainer). You can have your own implementation of [`DataContainer`](#leads.DataContainer)
-where you can add more attributes, but note that each time you push a data container to the context, it has to be either
-the same type or inherited from the type of the last pushed data container.
+[`DataContainer`](#leads.data.DataContainer). You can have your own implementation of
+[`DataContainer`](#leads.data.DataContainer) where you can add more attributes, but note that each time you push a data
+container to the context, it has to be either the same type or inherited from the type of the last pushed data
+container.
 
 ```python
 from leads import Context, DataContainer
@@ -54,7 +55,7 @@ context.update()
 
 ## Control the Context using Events
 
-We provide an event-oriented implementation of [`Context`](#leads.Context): [`LEADS`](#leads.LEADS).
+We provide an event-oriented implementation of [`Context`](#leads.context.Context): [`LEADS`](#leads.leads.LEADS).
 
 ```python
 from leads import LEADS
@@ -66,8 +67,8 @@ context: LEADS = LEADS(initial_data=None,
 
 ### Assign an Event Listener
 
-[`EventListener`](#leads.EventListener) is the collection of callbacks for context. The following example logs 
-"Updating..." when [`context.update()`](#leads.Context.update) is called.
+[`EventListener`](#leads.event.EventListener) is the collection of callbacks for context. The following example logs
+"Updating..." when [`context.update()`](#leads.context.Context.update) is called.
 
 ```python
 from typing import override
@@ -80,5 +81,5 @@ class MyEventListener(EventListener):
         L.info("Updating...")
 ```
 
-There are many methods in [`EventListener`](#leads.EventListener). We will use these methods to refer to the context 
-life cycle.
+There are many methods in [`EventListener`](#leads.event.EventListener). We will use these methods to refer to the
+context life cycle.
