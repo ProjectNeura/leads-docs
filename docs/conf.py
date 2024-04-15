@@ -50,7 +50,8 @@ exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
 
 autodoc2_packages = [
     _SITE_PACKAGES + "/leads",
-    _SITE_PACKAGES + "/leads_gui"
+    _SITE_PACKAGES + "/leads_gui",
+    _SITE_PACKAGES + "/leads_vec"
 ]
 
 # -- Options for HTML output -------------------------------------------------

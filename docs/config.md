@@ -130,3 +130,14 @@ L.info(config.w_debug_level)
 DEBUG
 INFO
 ```
+
+## Register the Configuration Object
+
+You will have to register the configuration object so that the parts of the framework that work in the background can
+successfully acquire it.
+
+```python
+from leads import ConfigTemplate, load_config, register_config
+
+register_config(load_config("config.json", ConfigTemplate))
+```

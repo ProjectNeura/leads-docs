@@ -12,6 +12,10 @@ cd /usr/local/leads
 python3.12 -m leads_vec -c config.json --xws run
 ```
 
+## Fault Lights
+
+See comments in ["devices.py"](#leads_vec.devices).
+
 ## Shortcuts
 
 | Key            | Usage              |
