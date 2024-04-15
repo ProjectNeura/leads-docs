@@ -11,14 +11,16 @@ from leads import *
 ## Create a Context
 
 ```python
-from leads import Context
+from leads import LEADS
 
-context: Context = Context(initial_data=None,
-                           data_seq_size=100,
-                           num_laps_timed=3)
+context: LEADS = LEADS(initial_data=None,
+                       data_seq_size=100,
+                       num_laps_timed=3)
 ```
 
 [`Context`](#leads.context.Context) is where the magic happens. It is the representation of the vehicle in code.
+
+[`LEADS`](#leads.leads.LEADS) is a event-oriented implementation of [`Context`](#leads.context.Context) we provide.
 
 There are 2 phases in a context: push and update. The push phase is when the raw data are inputted. On the other hand,
 the update phase is when the data has been pre-processed and is parsed and affects the context.
@@ -32,9 +34,9 @@ container to the context, it has to be either the same type or inherited from th
 container.
 
 ```python
-from leads import Context, DataContainer
+from leads import LEADS, DataContainer
 
-context: Context = Context()
+context: LEADS = LEADS()
 data: DataContainer = DataContainer()  # fill in your data
 context.push(data)
 ```
@@ -45,9 +47,9 @@ After the data is pushed to the context, it will not automatically update, you m
 update.
 
 ```python
-from leads import Context, DataContainer
+from leads import LEADS, DataContainer
 
-context: Context = Context()
+context: LEADS = LEADS()
 data: DataContainer = DataContainer()  # fill in your data
 context.push(data)
 context.update()
@@ -55,30 +57,22 @@ context.update()
 
 ## Control the Context using Events
 
-We provide an event-oriented implementation of [`Context`](#leads.context.Context): [`LEADS`](#leads.leads.LEADS).
-
-```python
-from leads import LEADS
-
-context: LEADS = LEADS(initial_data=None,
-                       data_seq_size=100,
-                       num_laps_timed=3)
-```
-
-### Assign an Event Listener
-
 [`EventListener`](#leads.event.EventListener) is the collection of callbacks for context. The following example logs
-"Updating..." when [`context.update()`](#leads.context.Context.update) is called.
+"Updating..." when [`context.update()`](#leads.leads.LEADS.update) is called.
 
 ```python
 from typing import override
-from leads import EventListener, UpdateEvent, L
+from leads import LEADS, EventListener, UpdateEvent, L
 
 
 class MyEventListener(EventListener):
     @override
     def on_update(self, event: UpdateEvent) -> None:
         L.info("Updating...")
+
+
+context: LEADS = LEADS()
+context.set_event_listener(MyEventListener())
 ```
 
 There are many methods in [`EventListener`](#leads.event.EventListener). We will use these methods to refer to the
