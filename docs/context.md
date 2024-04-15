@@ -61,7 +61,7 @@ context.update()
 ## Control the Context using Events
 
 [`EventListener`](#leads.event.EventListener) is the collection of callbacks for context. The following example logs
-"Updating..." when [`context.update()`](#leads.leads.LEADS.update) is called.
+"Updating..." when [`update()`](#leads.leads.LEADS.update) is called.
 
 ```python
 from typing import override

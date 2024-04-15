@@ -28,6 +28,7 @@ vec/user-manual.md
 :hidden:
 :caption: Framework
 context.md
+plugin.md
 config.md
 ```
 
