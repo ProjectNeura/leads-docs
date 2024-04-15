@@ -111,7 +111,7 @@ L.info(config["w_debug_level"])
 
 ### Sync Implicit Configurations to Explicit Configurations
 
-:::{note}
+:::{tip}
 Modifying the implicit configurations including [`load()`](#leads.config.template.ConfigTemplate.load) will not affect
 the explicit configurations.
 :::
