@@ -52,7 +52,7 @@ context.push(data)
 context.update()
 ```
 
-## Control the [`Context`](#leads.Context) using Events
+## Control the Context using Events
 
 We provide an event-oriented implementation of [`Context`](#leads.Context): [`LEADS`](#leads.LEADS).
 
