@@ -134,7 +134,7 @@ INFO
 
 ## Register the Configuration Object
 
-Similar to [context](#register-the-context), you will have to register the configuration object so that the components
+Similar to [context](context.md#register-the-context), you will have to register the configuration object so that the components
 of the framework that work in the background can successfully acquire it.
 
 :::{important}
