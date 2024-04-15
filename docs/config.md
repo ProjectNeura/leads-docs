@@ -112,8 +112,9 @@ L.info(config["w_debug_level"])
 ### Sync Implicit Configurations to Explicit Configurations
 
 :::{tip}
-Modifying the implicit configurations including [`load()`](#leads.config.template.ConfigTemplate.load) will not affect
-the explicit configurations.
+Modifying the implicit configurations will not affect the explicit configurations. However,
+[`load()`](#leads.config.template.ConfigTemplate.load) does call 
+[`refresh()`](#leads.config.template.ConfigTemplate.refresh) for you.
 :::
 
 ```python
