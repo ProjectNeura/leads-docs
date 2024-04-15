@@ -11,8 +11,8 @@ from sysconfig import get_paths
 _SITE_PACKAGES: str = relpath(get_paths()["purelib"])
 
 project = "LEADS"
-copyright = "ProjectNeura"
-author = "ProjectNeura"
+copyright = "Project Neura"
+author = "Project Neura"
 
 root_doc = "index"
 language = "en"
