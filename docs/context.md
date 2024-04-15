@@ -25,6 +25,7 @@ context: LEADS = LEADS(initial_data=None,
 There are 2 phases in a context: push and update. The push phase is when the raw data are inputted. On the other hand,
 the update phase is when the data is parsed and affects the context, having been pre-processed.
 
+(register_the_context)=
 ## Register the Context
 
 There are some components of the framework requires the context instance that are running in the background such as the
