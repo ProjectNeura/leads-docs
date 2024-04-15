@@ -19,6 +19,7 @@ To get familiar with the framework, definitely check out our official example: [
 
 ```{toctree}
 :hidden:
+:glob:
 :caption: 👍 VeC
 vec/index.md
 vec/user-manual.md
@@ -26,6 +27,7 @@ vec/user-manual.md
 
 ```{toctree}
 :hidden:
+:glob:
 :caption: Framework
 context.md
 plugin.md
@@ -34,12 +36,14 @@ config.md
 
 ```{toctree}
 :hidden:
+:glob:
 :caption: GUI
 gui.md
 ```
 
 ```{toctree}
 :hidden:
+:glob:
 :caption: API
 apidocs/index
 ```
