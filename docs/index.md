@@ -32,6 +32,8 @@ vec/user-manual.md
 context.md
 plugin.md
 config.md
+device.md
+sft.md
 ```
 
 ```{toctree}
