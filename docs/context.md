@@ -25,6 +25,44 @@ context: LEADS = LEADS(initial_data=None,
 There are 2 phases in a context: push and update. The push phase is when the raw data are inputted. On the other hand,
 the update phase is when the data is parsed and affects the context, having been pre-processed.
 
+## Register the Context
+
+There are some components of the framework requires the context instance that are running in the background such as the
+[System Failure Tracer](#trace-system-failure). To avoid passing the context to every such component, we provide a 
+registry system through which you only have to register once.
+
+:::{important}
+You can only register once.
+:::
+
+```python
+from leads import LEADS, register_context
+
+context: LEADS = LEADS()
+register_context(context)
+```
+
+You can then get it by calling [`get_context`](#leads.registry.get_context).
+
+## Get the Registered Context
+
+In ["Register the Context"](#register-the-context), we have registered the context. Now let's see the getter method.
+
+```python
+from leads import LEADS, get_context
+
+context: LEADS | None = get_context()
+```
+
+This will return `None` if there is no context registered. You can also require a nonnull context by calling
+[`require_context`](#leads.registry.require_context).
+
+```python
+from leads import LEADS, require_context
+
+context: LEADS = require_context()
+```
+
 ## Push to the Context
 
 A data container is a collection of data that is fed into the context. We provide a base class:

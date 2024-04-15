@@ -134,11 +134,16 @@ INFO
 
 ## Register the Configuration Object
 
-You will have to register the configuration object so that the parts of the framework that work in the background can
-successfully acquire it.
+Similar to [context](#register-the-context), you will have to register the configuration object so that the components
+of the framework that work in the background can successfully acquire it.
+
+:::{important}
+You can only register once.
+:::
 
 ```python
 from leads import ConfigTemplate, load_config, register_config
 
 register_config(load_config("config.json", ConfigTemplate))
 ```
+

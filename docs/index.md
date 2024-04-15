@@ -15,7 +15,7 @@ pip install leads
 
 :::
 
-To get familiar with the framework, definitely check out our official example: [LEADS VeC](#LEADS_VeC).
+To get familiar with the framework, definitely check out our official example: [LEADS VeC](#leads-vec).
 
 ```{toctree}
 :hidden:
@@ -28,7 +28,7 @@ vec/user-manual.md
 ```{toctree}
 :hidden:
 :glob:
-:caption: Framework
+:caption: 🔧 Framework
 context.md
 plugin.md
 config.md

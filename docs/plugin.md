@@ -34,8 +34,8 @@ context.plugin(SystemLiteral.DTCS, DTCS())
 
 ## Disable a Plugin
 
-In ["Mount a Plugin"](#mount-a-plugin), we mounted [`DTCS`](#leads.plugin.dtcs.DTCS) to the context. What if we want it
-to be disabled?
+In ["Mount a Plugin"](#mount-a-plugin), we have mounted [`DTCS`](#leads.plugin.dtcs.DTCS) to the context. What if we 
+want it to be disabled?
 
 ```python
 from leads import LEADS, SystemLiteral, DTCS
