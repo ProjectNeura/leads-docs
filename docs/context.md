@@ -23,7 +23,7 @@ context: LEADS = LEADS(initial_data=None,
 [`LEADS`](#leads.leads.LEADS) is a event-oriented implementation of [`Context`](#leads.context.Context) we provide.
 
 There are 2 phases in a context: push and update. The push phase is when the raw data are inputted. On the other hand,
-the update phase is when the data has been pre-processed and is parsed and affects the context.
+the update phase is when the data is parsed and affects the context, having been pre-processed.
 
 ## Push to the Context
 
