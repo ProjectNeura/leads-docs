@@ -37,7 +37,7 @@ config.md
 ```{toctree}
 :hidden:
 :glob:
-:caption: GUI
+:caption: 🪟 GUI
 gui.md
 ```
 

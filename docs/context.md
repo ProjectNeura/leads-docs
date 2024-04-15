@@ -26,11 +26,12 @@ There are 2 phases in a context: push and update. The push phase is when the raw
 the update phase is when the data is parsed and affects the context, having been pre-processed.
 
 (register_the_context)=
+
 ## Register the Context
 
 There are some components of the framework requires the context instance that are running in the background such as the
-[System Failure Tracer](#trace-system-failure). To avoid passing the context to every such component, we provide a 
-registry system through which you only have to register once.
+[System Failure Tracer](system_failure_tracer). To simplify the process, avoiding passing the context to every such
+component, we provide a registry system through which you only have to register once.
 
 :::{important}
 You can only register once.
@@ -71,7 +72,7 @@ A data container is a collection of data that is fed into the context. We provid
 [`DataContainer`](#leads.data.DataContainer) where you can add more attributes.
 
 :::{important}
-Note that each time you push a data container to the context, it has to be either the same type or inherited from the 
+Note that each time you push a data container to the context, it has to be either the same type or inherited from the
 type of the last pushed data container.
 :::
 
@@ -106,10 +107,12 @@ context.update()
 from typing import override
 from leads import LEADS, EventListener, UpdateEvent, L
 
+
 class MyEventListener(EventListener):
     @override
     def on_update(self, event: UpdateEvent) -> None:
         L.info("Updating...")
+
 
 context: LEADS = LEADS()
 context.set_event_listener(MyEventListener())
