@@ -121,8 +121,6 @@ context.set_event_listener(MyEventListener())
 There are many methods in [`EventListener`](#leads.event.EventListener). We will use these methods to refer to the
 context life cycle.
 
-(esc_mode)=
-
 ## ESC Mode
 
 There are four ESC modes: [`STANDARD`](#leads.constant.ESCMode.STANDARD),
