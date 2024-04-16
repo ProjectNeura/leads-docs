@@ -19,7 +19,7 @@ We provide these great plugins:
 - [`ABS`](#leads.plugin.abs.ABS)
 - [`EBI`](#leads.plugin.ebi.EBI)
 - [`ATBS`](#leads.plugin.atbs.ATBS)
-- [`GPSSpeedCorrection`](#leads.plugin.gps_speed_correction.GPSSpeedCorrection)
+- [`GPSSpeedCorrection`](#leads.plugin.gps_speed_correction.GPSSpeedCorrection) (not ESC)
 
 ## Mount a Plugin
 
@@ -31,6 +31,12 @@ from leads import LEADS, SystemLiteral, DTCS
 context: LEADS = LEADS()
 context.plugin(SystemLiteral.DTCS, DTCS())
 ```
+
+[`SystemLiteral`](#leads.constant.SystemLiteral) contains 4 predefined keys for the 4 ESC plugins.
+
+:::{tip}
+The specification stipulates that all plugin keys should consist of capital letters and underscores only.
+:::
 
 ## Disable a Plugin
 
