@@ -15,7 +15,7 @@ We provide a configuration system to help load local configuration files. We use
 ```python
 from leads import ConfigTemplate, load_config
 
-config: ConfigTemplate = load_config("config.json", ConfigTemplate)
+config: ConfigTemplate = load_config("path/to/the/config.json", ConfigTemplate)
 ```
 
 [`load_config`](#leads.config.registry.load_config) will return the specified type, which is 
@@ -38,7 +38,8 @@ class MyConfig(ConfigTemplate):
         self.custom_config: str = "this is my config"
         super().__init__(base)
 
-config: MyConfig = load_config("config.json", MyConfig)
+
+config: MyConfig = load_config("path/to/the/config.json", MyConfig)
 ```
 
 In this example, we declared a new [explicit](#explicit-and-implicit-configurations) configuration `custom_config` with
@@ -144,6 +145,6 @@ You can only register once.
 ```python
 from leads import ConfigTemplate, load_config, register_config
 
-register_config(load_config("config.json", ConfigTemplate))
+register_config(load_config("path/to/the/config.json", ConfigTemplate))
 ```
 

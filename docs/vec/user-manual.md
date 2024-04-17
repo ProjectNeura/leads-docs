@@ -36,4 +36,5 @@ See comments in ["devices.py"](#leads_vec.devices).
 | <kbd>2</kbd>   | Turn on / off ABS  |
 | <kbd>3</kbd>   | Turn on / off EBI  |
 | <kbd>4</kbd>   | Turn on / off ATBS |
+| <kbd>T</kbd>   | Time lap           |
 | <kbd>esc</kbd> | Quit               |
