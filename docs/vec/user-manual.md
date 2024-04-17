@@ -17,6 +17,23 @@ Improper use of this program may damage your device.
 }
 ```
 
+### Determine Devices' Ports
+
+The ports may differ due to various drivers. You can determine the port using the described procedure.
+
+1. Remove all USB devices
+2. Plug in one device
+3. List current ACM ports
+   ```shell
+   ls /dev/ttyACM*
+   ```
+   If no port is found, try AMA ports.
+   ```shell
+   ls /dev/ttyAMA*
+   ```
+4. Set the device to the newly appeared port
+5. Repeat steps 2 to 4 for other devices
+
 ## Start the Program
 
 ```shell
