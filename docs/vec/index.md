@@ -7,8 +7,10 @@ VeC specifies a series of hardware components, assembly methods, and dedicated s
 
 To get started, read [this](https://github.com/ProjectNeura/LEADS) first.
 
-## Hardware Component
-
 :::{note}
 The reproduction guide is planned to be available on 2024-9-1.
 :::
+
+## Hardware Components
+
+Below is a list of what we use and where we get them. You may choose other alternatives.
