@@ -5,6 +5,18 @@ This user manual assumes that the proper environment has been set and the necess
 Improper use of this program may damage your device.
 :::
 
+## Configuration
+
+```json
+{
+  "refresh_rate": 60,
+  "manual_mode": true,
+  "gps_receiver_port": "/dev/ttyAMA0",
+  "wheel_speed_controller_port": "/dev/ttyAMA1",
+  "power_controller_port": "/dev/ttyAMA2"
+}
+```
+
 ## Start the Program
 
 ```shell
