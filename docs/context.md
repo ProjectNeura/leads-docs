@@ -48,7 +48,7 @@ You can then get it by calling [`get_context`](#leads.registry.get_context).
 
 ## Get the Registered Context
 
-In ["Register the Context"](#register-the-context), we have registered the context. Now let's see the getter method.
+In [Register the Context](#register-the-context), we have registered the context. Now let's see the getter method.
 
 ```python
 from leads import LEADS, get_context

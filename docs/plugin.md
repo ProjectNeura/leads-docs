@@ -40,7 +40,7 @@ The specification stipulates that all plugin keys should consist of capital lett
 
 ## Disable a Plugin
 
-In ["Mount a Plugin"](#mount-a-plugin), we have mounted [`DTCS`](#leads.plugin.dtcs.DTCS) to the context. What if we 
+In [Mount a Plugin](#mount-a-plugin), we have mounted [`DTCS`](#leads.plugin.dtcs.DTCS) to the context. What if we
 want it to be disabled?
 
 ```python
