@@ -21,6 +21,13 @@ We provide these great plugins:
 - [`ATBS`](#leads.plugin.atbs.ATBS)
 - [`GPSSpeedCorrection`](#leads.plugin.gps_speed_correction.GPSSpeedCorrection) (not ESC)
 
+## ESC Plugins
+
+[`ESCPlugin`](#leads.plugin.plugin.ESCPlugin) is a type of plugin that involves electric stability control. It is just
+like regular plugins but will be forcibly disabled when the ESC mode of the context is set to
+[`OFF`](#leads.constant.ESCMode.OFF). See [ESC Mode](esc_mode). The 5 built-in plugins listed above are all ESC plugins
+except the last one.
+
 ## Mount a Plugin
 
 The following example mounts [`DTCS`](#leads.plugin.dtcs.DTCS) to the context.
@@ -50,9 +57,3 @@ context: LEADS = LEADS()
 context.plugin(SystemLiteral.DTCS, DTCS())
 context.plugin(SystemLiteral.DTCS).enabled(False)
 ```
-
-## ESC Plugins
-
-There is a special type of plugin: [`ESCPlugin`](#leads.plugin.plugin.ESCPlugin). It is just like regular plugins but
-will be forcibly disabled when the ESC mode of the context is set to [`OFF`](#leads.constant.ESCMode.OFF). See
-[ESC Mode](esc_mode).
