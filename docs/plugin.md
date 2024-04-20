@@ -53,6 +53,6 @@ context.plugin(SystemLiteral.DTCS).enabled(False)
 
 ## ESC Plugins
 
-There is a special type of plugin, [`ESCPlugin`](#leads.plugin.plugin.ESCPlugin). It is just like regular plugins but
+There is a special type of plugin: [`ESCPlugin`](#leads.plugin.plugin.ESCPlugin). It is just like regular plugins but
 will be forcibly disabled when the ESC mode of the context is set to [`OFF`](#leads.constant.ESCMode.OFF). See
 [ESC Mode](esc_mode).
