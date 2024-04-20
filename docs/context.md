@@ -121,13 +121,14 @@ context.set_event_listener(MyEventListener())
 There are many methods in [`EventListener`](#leads.event.EventListener). We will use these methods to refer to the
 context life cycle.
 
+(esc_mode)=
+
 ## ESC Mode
 
 There are four ESC modes: [`STANDARD`](#leads.constant.ESCMode.STANDARD),
 [`AGGRESSIVE`](#leads.constant.ESCMode.AGGRESSIVE), [`SPORT`](#leads.constant.ESCMode.SPORT),
 [`OFF`](#leads.constant.ESCMode.OFF). They rank from the earliest intervention to no involvement at all. Setting the ESC
-mode of the context to [`OFF`](#leads.constant.ESCMode.OFF) will also automatically disable all plugins unless they have
-overridden [`enabled()`](#leads.plugin.plugin.Plugin.enabled) to be unrelated to the ESC setting of the context.
+mode of the context to [`OFF`](#leads.constant.ESCMode.OFF) will also automatically disable all ESC plugins.
 
 The example below sets the esc mode of the context to [`SPORT`](#leads.constant.ESCMode.SPORT).
 
