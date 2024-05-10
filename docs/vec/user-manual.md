@@ -37,8 +37,7 @@ The ports may differ due to various drivers. You can determine the port using th
 ## Start the Program
 
 ```shell
-cd /usr/local/leads
-python3.12 -m leads_vec -c config.json --xws run
+/usr/local/leads/venv/bin/python -m leads_vec -c /usr/local/leads/config.json --xws run
 ```
 
 ## Fault Lights
