@@ -36,6 +36,10 @@ The ports may differ due to various drivers. You can determine the port using th
 
 ## Start the Program
 
+:::{warning}
+Running as root is not recommended.
+:::
+
 ```shell
 leads-vec -c /usr/local/leads/config.json --xws run
 ```
@@ -54,3 +58,8 @@ See comments in "[devices.py](#leads_vec.devices)".
 | <kbd>4</kbd>   | Turn on / off ATBS |
 | <kbd>T</kbd>   | Time lap           |
 | <kbd>esc</kbd> | Quit               |
+
+## Debug
+
+If you run into any error, first search in the existing [issues](https://github.com/ProjectNeura/LEADS/issues). If it
+has not been encountered, please post a new issue.
