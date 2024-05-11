@@ -40,8 +40,10 @@ The ports may differ due to various drivers. You can determine the port using th
 Running as root is not recommended.
 :::
 
+The program should automatically start if it is correctly configured. If not, use the following command.
+
 ```shell
-leads-vec -c /usr/local/leads/config.json --xws run
+leads-vec -c /usr/local/leads/config.json run
 ```
 
 ## Fault Lights
