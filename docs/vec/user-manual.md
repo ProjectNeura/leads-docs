@@ -29,6 +29,10 @@ From then on, wait until this dialog shows up.
 
 ![rpi-imager-finish.png](../_static/rpi-imager-finish.png)
 
+Click "CONTINUE" and make sure the SD card has been successfully ejected before you remove it.
+
+Insert the SD card to the Raspberry Pi and power up. Follow the instructions to install the system.
+
 ### Environment Setup
 
 :::{important}
