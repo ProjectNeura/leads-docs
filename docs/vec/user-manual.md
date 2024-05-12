@@ -199,6 +199,12 @@ procedure.
 4. Set the device to the newly appeared port
 5. Repeat steps 2 to 4 for other devices
 
+## Update LEADS
+
+```shell
+pip-leads --upgrade leads
+```
+
 ## Start the Program
 
 :::{warning}
