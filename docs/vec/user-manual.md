@@ -6,7 +6,7 @@ This user manual shall guide you through the whole reproduction process of LEADS
 This user manual is written in steps in order.
 :::
 
-### Install the Operating System for the Raspberry Pi
+## Install the Operating System for the Raspberry Pi
 
 Download and install the [Raspberry Pi Imager](https://www.raspberrypi.com/software).
 
@@ -33,7 +33,7 @@ Click "CONTINUE" and make sure the SD card has been successfully ejected before 
 
 Insert the SD card to the Raspberry Pi and power up. Follow the instructions to install the system.
 
-### Environment Setup
+## Environment Setup
 
 :::{important}
 In this section, you must have **root** permission.
@@ -45,7 +45,7 @@ sudo su
 
 You may also find references [here](https://github.com/ProjectNeura/LEADS?tab=readme-ov-file#environment-setup).
 
-#### Install LEADS
+### Install LEADS
 
 Follow [this](https://github.com/ProjectNeura/LEADS?tab=readme-ov-file#leads) section to install everything.
 
@@ -62,7 +62,7 @@ LEADS Version: ...
 LEADS VeC Version: ...
 ```
 
-#### Register LEADS VeC
+### Register LEADS VeC
 
 ```shell
 leads-vec -r systemd run
@@ -75,19 +75,19 @@ systemctl --user daemon-reload
 systemctl --user enable leads-vec
 ```
 
-#### Install FRP (Optional)
+### Install FRP (Optional)
 
 Follow [this](https://github.com/ProjectNeura/LEADS?tab=readme-ov-file#frp) section to install FRP.
 
 Should you have membership in the VeC Project, please ask the person in charge, for the FRP server credentials.
 
-#### Install OBS Studio (Optional)
+### Install OBS Studio (Optional)
 
 Follow [this](https://github.com/ProjectNeura/LEADS?tab=readme-ov-file#obs-studio) section to install OBS Studio.
 
 Should you have membership in the VeC Project, please ask the person in charge, for the YouTube channel credentials.
 
-#### Reboot
+### Reboot
 
 Reboot the Raspberry Pi to apply changes.
 
@@ -96,6 +96,20 @@ reboot
 ```
 
 When it starts again, you should see LEADS VeC automatically running.
+
+## Ubuntu Settings
+
+:::{tip}
+These settings can possibly be found in various locations depending on the specific system version.
+:::
+
+To prevent the screen blanks off in the middle of driving, you should set "Screen Blank" to "Never".
+
+![ubuntu-settings-power.png](../_static/ubuntu-settings-power.png)
+
+To improve the experience, it is recommended to enable "Auto-hide the Dock".
+
+![ubuntu-settings-dock](../_static/ubuntu-settings-dock.png)
 
 ## Configurations
 
