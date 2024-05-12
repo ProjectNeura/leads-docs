@@ -21,7 +21,7 @@ recommended. They are in "Other general-purpose OS".
 
 Select the "Storage" accordingly, then click "NEXT".
 
-If a dialog like the one above pops up, just say yes.
+If a dialog like the one below pops up, just say yes.
 
 ![rpi-imager-warning](../_static/rpi-imager-warning.png)
 
