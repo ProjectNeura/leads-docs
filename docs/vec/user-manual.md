@@ -35,14 +35,6 @@ Insert the SD card to the Raspberry Pi and power up. Follow the instructions to 
 
 ## Environment Setup
 
-:::{important}
-In this section, you must have **root** permission.
-
-```shell
-sudo su
-```
-:::
-
 You may also find references [here](https://github.com/ProjectNeura/LEADS?tab=readme-ov-file#environment-setup).
 
 ### Install LEADS
@@ -63,6 +55,15 @@ LEADS VeC Version: ...
 ```
 
 ### Register LEADS VeC
+
+:::{important}
+In this section, you must have **root** permission.
+
+```shell
+sudo su
+```
+
+:::
 
 ```shell
 leads-vec -r systemd run
