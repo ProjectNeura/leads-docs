@@ -202,7 +202,7 @@ procedure.
 ## Update LEADS
 
 ```shell
-pip-leads --upgrade leads
+pip-leads install --upgrade leads
 ```
 
 ## Start the Program
