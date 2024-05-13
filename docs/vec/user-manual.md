@@ -153,12 +153,14 @@ You may also add optional configurations. Learn more about the configurations
 
 ```json
 {
-  "manual_mode": true,
+   "manual_mode": true,
    "fullscreen": true,
    "w_debug_level": "ERROR",
-  "gps_receiver_port": "/dev/ttyAMA0",
-  "wheel_speed_controller_port": "/dev/ttyAMA1",
-  "power_controller_port": "/dev/ttyAMA2"
+   "gps_receiver_port": "/dev/ttyAMA0",
+   "wheel_speed_controller_port": "/dev/ttyAMA1",
+   "power_controller_port": "/dev/ttyAMA2",
+   "front_wheel_diameter": 20,
+   "rear_wheel_diameter": 22
 }
 ```
 
@@ -171,7 +173,9 @@ You may also add optional configurations. Learn more about the configurations
    "w_debug_level": "WARN",
    "gps_receiver_port": "/dev/ttyAMA0",
    "wheel_speed_controller_port": "/dev/ttyAMA1",
-   "power_controller_port": "/dev/ttyAMA2"
+   "power_controller_port": "/dev/ttyAMA2",
+   "front_wheel_diameter": 20,
+   "rear_wheel_diameter": 22
 }
 ```
 
@@ -183,7 +187,9 @@ You may also add optional configurations. Learn more about the configurations
    "refresh_rate": 60,
    "gps_receiver_port": "/dev/ttyAMA0",
    "wheel_speed_controller_port": "/dev/ttyAMA1",
-   "power_controller_port": "/dev/ttyAMA2"
+   "power_controller_port": "/dev/ttyAMA2",
+   "front_wheel_diameter": 20,
+   "rear_wheel_diameter": 22
 }
 ```
 
