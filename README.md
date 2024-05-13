@@ -1,4 +1,4 @@
-# leads-docs
+# LEADS Docs
 
 Docs for LEADS
 
