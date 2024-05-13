@@ -85,13 +85,13 @@ systemctl --user enable leads-vec
 
 Follow [this](https://github.com/ProjectNeura/LEADS?tab=readme-ov-file#frp) section to install FRP.
 
-Should you have membership in the VeC Project, please ask the person in charge, for the FRP server credentials.
+Should you have membership in the VeC Project, please ask your contact for the FRP server credentials.
 
 ### Install OBS Studio (Optional)
 
 Follow [this](https://github.com/ProjectNeura/LEADS?tab=readme-ov-file#obs-studio) section to install OBS Studio.
 
-Should you have membership in the VeC Project, please ask the person in charge, for the YouTube channel credentials.
+Should you have membership in the VeC Project, please ask your contact for the YouTube channel credentials.
 
 ### Reboot
 

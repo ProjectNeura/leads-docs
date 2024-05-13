@@ -23,6 +23,7 @@ To get familiar with the framework, definitely check out our official example: [
 :caption: 👍 VeC
 vec/index.md
 vec/user-manual.md
+vec/vc.md
 ```
 
 ```{toctree}
