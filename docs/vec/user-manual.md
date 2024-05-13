@@ -35,8 +35,7 @@ Insert the SD card to the Raspberry Pi and power up. Follow the instructions to 
 
 :::{warning}
 The installation is very likely to fail if you do not eject the SD card properly, or you click "Continue" too soon
-before
-Wi-Fi is fully connected (you will see during the installation process on the Raspberry Pi).
+before Wi-Fi is fully connected (you will see during the installation process on the Raspberry Pi).
 :::
 
 ## Environment Setup
