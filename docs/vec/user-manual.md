@@ -156,9 +156,9 @@ You may also add optional configurations. Learn more about the configurations
    "manual_mode": true,
    "fullscreen": true,
    "w_debug_level": "ERROR",
-   "gps_receiver_port": "/dev/ttyAMA0",
-   "wheel_speed_controller_port": "/dev/ttyAMA1",
-   "power_controller_port": "/dev/ttyAMA2",
+   "gps_receiver_port": "/dev/...",
+   "wheel_speed_controller_port": "/dev/...",
+   "power_controller_port": "/dev/...",
    "front_wheel_diameter": 20,
    "rear_wheel_diameter": 22
 }
@@ -171,9 +171,9 @@ You may also add optional configurations. Learn more about the configurations
    "fullscreen": true,
    "refresh_rate": 60,
    "w_debug_level": "WARN",
-   "gps_receiver_port": "/dev/ttyAMA0",
-   "wheel_speed_controller_port": "/dev/ttyAMA1",
-   "power_controller_port": "/dev/ttyAMA2",
+   "gps_receiver_port": "/dev/...",
+   "wheel_speed_controller_port": "/dev/...",
+   "power_controller_port": "/dev/...",
    "front_wheel_diameter": 20,
    "rear_wheel_diameter": 22
 }
@@ -185,9 +185,9 @@ You may also add optional configurations. Learn more about the configurations
 {
    "fullscreen": true,
    "refresh_rate": 60,
-   "gps_receiver_port": "/dev/ttyAMA0",
-   "wheel_speed_controller_port": "/dev/ttyAMA1",
-   "power_controller_port": "/dev/ttyAMA2",
+   "gps_receiver_port": "/dev/...",
+   "wheel_speed_controller_port": "/dev/...",
+   "power_controller_port": "/dev/...",
    "front_wheel_diameter": 20,
    "rear_wheel_diameter": 22
 }
@@ -210,6 +210,12 @@ procedure.
    ```
 4. Set the device to the newly appeared port
 5. Repeat steps 2 to 4 for other devices
+
+If you see "permission denied", apply this command to the corresponding device.
+
+```shell
+chmod 666 /dev/...
+```
 
 ## Update LEADS
 
