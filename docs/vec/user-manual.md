@@ -6,6 +6,18 @@ This user manual shall guide you through the whole reproduction process of LEADS
 This user manual is written in steps in order.
 :::
 
+## Connect the Wheel Speed Sensors
+
+You must connect the wheel speed sensors to the designated pins.
+
+| Position          | Pin |
+|-------------------|-----|
+| Left Front Wheel  | 2   |
+| Right Front Wheel | 3   |
+| Left Rear Wheel   | 4   |
+| Right Rear Wheel  | 5   |
+| Center Rear Wheel | 6   |
+
 ## Install the Operating System for the Raspberry Pi
 
 Download and install the [Raspberry Pi Imager](https://www.raspberrypi.com/software).
@@ -80,6 +92,16 @@ You may close the program immediately after the window shows up.
 systemctl --user daemon-reload
 systemctl --user enable leads-vec
 ```
+
+:::{warning}
+Always use explicit startup until deployment. The logging information may not be seen in implicit mode. Stop the service
+during setup.
+
+```shell
+systemctl --user stop leads-vec 
+```
+
+:::
 
 ### Install FRP (Optional)
 
