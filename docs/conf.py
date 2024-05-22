@@ -59,8 +59,8 @@ autodoc2_packages = [
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
 html_title = "LEADS Docs"
-html_logo = "_static/logo.png"
-html_favicon = "_static/logo.png"
+html_logo = "https://projectneura.org/img/logo.png"
+html_favicon = "https://projectneura.org/img/logo.png"
 html_theme = "sphinx_book_theme"
 html_theme_options = {
     "home_page_in_toc": True,
