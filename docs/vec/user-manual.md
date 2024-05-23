@@ -109,12 +109,6 @@ Follow [this](https://github.com/ProjectNeura/LEADS?tab=readme-ov-file#frp) sect
 
 Should you have membership in the VeC Project, please ask your contact for the FRP server credentials.
 
-### Install OBS Studio (Optional)
-
-Follow [this](https://github.com/ProjectNeura/LEADS?tab=readme-ov-file#obs-studio) section to install OBS Studio.
-
-Should you have membership in the VeC Project, please ask your contact for the YouTube channel credentials.
-
 ### Reboot
 
 Reboot the Raspberry Pi to apply changes.
