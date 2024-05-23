@@ -20,7 +20,7 @@ To get familiar with the framework, definitely check out our official example: [
 ```{toctree}
 :hidden:
 :glob:
-:caption: 👍 VeC
+:caption: ⚡️ VeC
 vec/index.md
 vec/user-manual.md
 vec/vc.md
@@ -29,12 +29,19 @@ vec/vc.md
 ```{toctree}
 :hidden:
 :glob:
-:caption: 🔧 Framework
+:caption: 🛠️ Framework
 context.md
 plugin.md
 config.md
 device.md
 sft.md
+```
+
+```{toctree}
+:hidden:
+:glob:
+:caption: 🎛️ Arduino
+arduino/index.md
 ```
 
 ```{toctree}
@@ -47,6 +54,6 @@ gui.md
 ```{toctree}
 :hidden:
 :glob:
-:caption: API
+:caption: ⚙️ API
 apidocs/index
 ```
