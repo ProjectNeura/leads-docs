@@ -21,6 +21,12 @@ We are looking for new members of the VeC Steering Council. To quickly qualify y
 - What is SFT?
     - SFT, which stands for System Failure Tracer, allows different components to throw errors into a unified manager so
       that those error collection components can retrieve these errors.
+- How are devices updated, actively or passively?
+    - Regular devices are normally updated actively, meaning that whenever [`read()`](#leads.dt.device.Device.read) is
+      called, it will acquire a new value.
+    - Shadow devices (devices that run in separate threads) are usually updated passively, meaning that it only
+      updates when notified. For example, Arduino boards are updated when a message is received. Every time
+      [`read()`](#leads.dt.device.Device.read) is called, it will return that last updated value.
 
 ### GUI
 
