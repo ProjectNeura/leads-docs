@@ -109,6 +109,25 @@ Follow [this](https://github.com/ProjectNeura/LEADS?tab=readme-ov-file#frp) sect
 
 Should you have membership in the VeC Project, please ask your contact for the FRP server credentials.
 
+### Install GStreamer (Optional)
+
+We use GStreamer for streaming, follow [this](https://github.com/ProjectNeura/LEADS?tab=readme-ov-file#gstreamer)
+section to install GStreamer.
+
+Should you have membership in the VeC Project, please ask your contact for the YouTube stream key.
+
+:::{tip}
+To check what the cameras are, install `v4l-utils`.
+
+```shell
+apt install v4l-utils
+v4l2-ctl --list-devices
+```
+
+You will find paths like "/dev/video0" under each device. Use the first path for each device. The camera argument passed
+to the script for "/dev/video0" is `0`.
+:::
+
 ### Reboot
 
 Reboot the Raspberry Pi to apply changes.
