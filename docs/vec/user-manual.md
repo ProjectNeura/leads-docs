@@ -54,6 +54,15 @@ before Wi-Fi is fully connected (you will see during the installation process on
 
 You may also find references [here](https://github.com/ProjectNeura/LEADS?tab=readme-ov-file#environment-setup).
 
+:::{tip}
+If you encounter "permission denied" errors, grant root permission.
+
+```shell
+sudo su
+```
+
+:::
+
 ### Install LEADS
 
 Follow [this](https://github.com/ProjectNeura/LEADS?tab=readme-ov-file#leads) section to install everything.
@@ -72,15 +81,6 @@ LEADS VeC Version: ...
 ```
 
 ### Register LEADS VeC
-
-:::{important}
-In this section, you must have **root** permission.
-
-```shell
-sudo su
-```
-
-:::
 
 ```shell
 leads-vec -r systemd run
