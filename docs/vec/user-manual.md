@@ -248,9 +248,14 @@ procedure.
 
 If you see "permission denied", apply this command to the corresponding device.
 
+The dynamic symbol changes on every reboot. A more persistent identifier can be acquired through the following command.
+
 ```shell
-chmod 666 /dev/...
+ls -l /dev/serial/by-id/
 ```
+
+For example, if the dynamic symbol has been determined to be "/dev/ttyACM0", you will find something similar to
+`usb-FTDI_FT232R_USB_UART_AI03AC70-if00-port0 -> /dev/ttyACM0`.
 
 ## Update LEADS
 
