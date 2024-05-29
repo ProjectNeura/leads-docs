@@ -195,7 +195,7 @@ You may also add optional configurations. Learn more about the configurations
    "wheel_speed_controller_port": "/dev/...",
    "power_controller_port": "/dev/...",
    "front_wheel_diameter": 20,
-   "rear_wheel_diameter": 22
+   "rear_wheel_diameter": 26
 }
 ```
 
@@ -210,7 +210,7 @@ You may also add optional configurations. Learn more about the configurations
    "wheel_speed_controller_port": "/dev/...",
    "power_controller_port": "/dev/...",
    "front_wheel_diameter": 20,
-   "rear_wheel_diameter": 22
+   "rear_wheel_diameter": 26
 }
 ```
 
@@ -224,7 +224,7 @@ You may also add optional configurations. Learn more about the configurations
    "wheel_speed_controller_port": "/dev/...",
    "power_controller_port": "/dev/...",
    "front_wheel_diameter": 20,
-   "rear_wheel_diameter": 22
+   "rear_wheel_diameter": 26
 }
 ```
 
