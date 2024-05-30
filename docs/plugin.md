@@ -1,13 +1,5 @@
 # Context Plugins
 
-:::{tip}
-
-```python
-from leads import *
-```
-
-:::
-
 A plugin is basically a bunch of predefined callback methods. It implements specific functions by registering a
 series of callback methods, such as ESC or GPS speed correction.
 

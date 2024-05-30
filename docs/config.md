@@ -1,13 +1,5 @@
 # Configuration System
 
-:::{tip}
-
-```python
-from leads import *
-```
-
-:::
-
 We provide a configuration system to help load local configuration files. We use JSON as the only format.
 
 ## Load a Configuration File

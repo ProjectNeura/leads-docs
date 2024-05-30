@@ -1,12 +1,8 @@
 # Context and Events
 
-:::{tip}
+[`Context`](#leads.context.Context) is where the magic happens. It is the representation of the vehicle in code.
 
-```python
-from leads import *
-```
-
-:::
+[`LEADS`](#leads.leads.LEADS) is an event-oriented implementation of [`Context`](#leads.context.Context) we provide.
 
 ## Create a Context
 
@@ -17,10 +13,6 @@ context: LEADS = LEADS(initial_data=None,
                        data_seq_size=100,
                        num_laps_timed=3)
 ```
-
-[`Context`](#leads.context.Context) is where the magic happens. It is the representation of the vehicle in code.
-
-[`LEADS`](#leads.leads.LEADS) is a event-oriented implementation of [`Context`](#leads.context.Context) we provide.
 
 There are 2 phases in a context: push and update. The push phase is when the raw data are inputted. On the other hand,
 the update phase is when the data is parsed and affects the context, having been pre-processed.
