@@ -1,13 +1,5 @@
 # Devices and Controllers
 
-:::{tip}
-
-```python
-from leads import *
-```
-
-:::
-
 [`Device`](#leads.dt.device.Device) is the base class of every device, from sensors to motors.
 [`Controller`](#leads.dt.controller.Controller) is a special type of device that can contain child devices. By
 introducing controllers, we have a device tree. The tree always starts from a controller node known as the main
@@ -84,4 +76,41 @@ class MainController(RandomController()):
 @controller("secondary_controller", MAIN_CONTROLLER)
 class SecondaryController(SinController):
     pass
+```
+
+## Define a Custom Device
+
+In many cases the built-in devices are not sufficient. You can define your devices in a separate module or along with
+the registration, which is shown below.
+
+```python
+from typing import override as _override
+
+from leads import controller, MAIN_CONTROLLER, device, Device, L
+from leads_emulation import RandomController
+
+
+@controller(MAIN_CONTROLLER, args=(10, 100), kwargs={"skid_possibility": 0.5})
+class MainController(RandomController()):
+    pass
+
+
+@device("my_device", MAIN_CONTROLLER)
+class MyDevice(Device):
+    def __init__(self) -> None:
+        super().__init__()
+        self._value: int = 0
+
+    @_override
+    def initialize(self, *parent_tags: str) -> None:
+        L.info("My device is initializing")
+
+    @_override
+    def write(self, payload: int) -> None:
+        L.info(f"My device receives an input: {payload}")
+        self._value = payload
+
+    @_override
+    def read(self) -> int:
+        return self._value
 ```
