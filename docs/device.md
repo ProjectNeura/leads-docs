@@ -36,7 +36,7 @@ from leads_emulation import RandomController
 
 
 @controller(MAIN_CONTROLLER, args=(10, 100), kwargs={"skid_possibility": 0.5})
-class MainController(RandomController()):
+class MainController(RandomController):
     pass
 ```
 
@@ -50,7 +50,7 @@ from leads_emulation import RandomController
 
 
 @controller(MAIN_CONTROLLER)
-class MainController(RandomController()):
+class MainController(RandomController):
     pass
 
 
@@ -69,7 +69,7 @@ from leads_emulation import RandomController, SinController
 
 
 @controller(MAIN_CONTROLLER, args=(10, 100), kwargs={"skid_possibility": 0.5})
-class MainController(RandomController()):
+class MainController(RandomController):
     pass
 
 
@@ -91,7 +91,7 @@ from leads_emulation import RandomController
 
 
 @controller(MAIN_CONTROLLER, args=(10, 100), kwargs={"skid_possibility": 0.5})
-class MainController(RandomController()):
+class MainController(RandomController):
     pass
 
 
