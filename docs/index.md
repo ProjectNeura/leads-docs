@@ -35,6 +35,7 @@ plugin.md
 config.md
 device.md
 sft.md
+comm.md
 ```
 
 ```{toctree}
