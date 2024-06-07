@@ -24,7 +24,7 @@ This example creates a server listening on port `9000`. The port is not yet occu
 
 ### Assign Callback Methods
 
-You can pass a [`Callback`](#leads.comm.server.prototype.Callback) object when creating the server.
+You can pass a [`Callback`](#leads.comm.prototype.Callback) object when creating the server.
 
 For example, this code prints every message when it is received.
 
@@ -46,7 +46,7 @@ server: Server = create_server(port, MyCallback())
 
 ### Broadcast to Clients
 
-To send a message to all clients, you can use [`broadcast()`](#leads.comm.server.server.Server.Broadcast) method.
+To send a message to all clients, you can use [`broadcast()`](#leads.comm.server.server.Server.broadcast) method.
 
 ## Client
 
