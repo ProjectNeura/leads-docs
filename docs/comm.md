@@ -6,7 +6,9 @@ client. All other operations including receiving must be done through callback m
 
 ## Server
 
-A [`Server`](#leads.comm.server.server.Server) is a pool that consists of multiple connections.
+A [`Server`](#leads.comm.server.server.Server) is a pool that consists of multiple connections. Each connection runs
+in a separate thread. You can specify to run the listener in the main thread or another thread when
+[starting the server](#start-the-server).
 
 ### Create a Server
 
@@ -189,7 +191,20 @@ client.close()
 
 ## Connection
 
-[`Connection`](#leads.comm.prototype.Connection) provides basic interfaces for TCP/IP protocol. You can override these
-interfaces to suit other protocols. We built our serial communication system based on the identical system simply with a
-different implementation of [`Connection`](#leads.comm.prototype.Connection). See
-[`SerialConnection`](#leads_comm_serial.connection.SerialConnection).
+[`ConnectionBase`](#leads.comm.prototype.ConnectionBase) is the abstract base class of
+[`Connection`](#leads.comm.prototype.Connection). [`ConnectionBase`](#leads.comm.prototype.ConnectionBase) provides
+a set of tools to parse the stream into sentences and deal with the remainder with ease, whereas
+[`Connection`](#leads.comm.prototype.Connection) implements the abstract methods and differentiates in TCP/IP as the
+underlying protocol.
+
+The fundamental of the system is built on [`ConnectionBase`](#leads.comm.prototype.ConnectionBase), not
+[`Connection`](#leads.comm.prototype.Connection). Therefore, you can use any implementation of
+[`ConnectionBase`](#leads.comm.prototype.ConnectionBase) to suit other protocols. Our serial communication system is a
+perfect example. See [`SerialConnection`](#leads_comm_serial.connection.SerialConnection).
+
+:::{important}
+[`Server`](#leads.comm.server.server.Server) and [`Client`](#leads.comm.client.client.Client) do not support custom
+connections. They are hardcoded to use [`Connection`](#leads.comm.prototype.Connection). If you have a custom
+implementation, you need to build your own server or client from [`Entity`](#leads.comm.prototype.Entity) like
+[`ArduinoProto`](#leads_arduino.arduino_proto.ArduinoProto) in our case.
+:::
