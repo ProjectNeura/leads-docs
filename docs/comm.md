@@ -6,7 +6,7 @@ client. All other operations including receiving must be done through callback m
 
 ## Server
 
-A [`Server`](#leads.comm.server.server.Server) is a pool that consists of multiple connections.
+[`Server`](#leads.comm.server.server.Server) is a pool that consists of multiple connections.
 
 ### Create a Server
 
@@ -103,7 +103,8 @@ server.close()
 
 ## Client
 
-Unlike a server, a [`Client`](#leads.comm.client.client.Client) holds only one connection.
+Unlike [`Server`](#leads.comm.server.server.Server), [`Client`](#leads.comm.client.client.Client) holds only one
+connection.
 
 ### Create a Client
 
@@ -187,3 +188,8 @@ client.close()
 ```
 
 ## Connection
+
+[`Connection`](#leads.comm.prototype.Connection) provides basic interfaces for TCP/IP protocol. You can override these
+interfaces to suit other protocols. We built our serial communication system based on the identical system simply with a
+different implementation of [`Connection`](#leads.comm.prototype.Connection). See
+[`SerialConnection`](#leads_comm_serial.connection.SerialConnection).
