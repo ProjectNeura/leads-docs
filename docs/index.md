@@ -34,6 +34,7 @@ context.md
 plugin.md
 config.md
 device.md
+logger.md
 sft.md
 comm.md
 ```
