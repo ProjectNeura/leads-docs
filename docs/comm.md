@@ -6,7 +6,7 @@ client. All other operations including receiving must be done through callback m
 
 ## Server
 
-[`Server`](#leads.comm.server.server.Server) is a pool that consists of multiple connections.
+A [`Server`](#leads.comm.server.server.Server) is a pool that consists of multiple connections.
 
 ### Create a Server
 
@@ -103,7 +103,7 @@ server.close()
 
 ## Client
 
-Unlike [`Server`](#leads.comm.server.server.Server), [`Client`](#leads.comm.client.client.Client) holds only one
+Unlike [`Server`](#leads.comm.server.server.Server), a [`Client`](#leads.comm.client.client.Client) holds only one
 connection.
 
 ### Create a Client
