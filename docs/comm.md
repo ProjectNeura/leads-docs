@@ -194,8 +194,8 @@ client.close()
 [`ConnectionBase`](#leads.comm.prototype.ConnectionBase) is the abstract base class of
 [`Connection`](#leads.comm.prototype.Connection). [`ConnectionBase`](#leads.comm.prototype.ConnectionBase) provides
 a set of tools to parse the stream into sentences and deal with the remainder with ease, whereas
-[`Connection`](#leads.comm.prototype.Connection) implements the abstract methods and differentiates in TCP/IP as the
-underlying protocol.
+[`Connection`](#leads.comm.prototype.Connection) implements the abstract methods and specifies TCP/IP as the underlying
+protocol.
 
 The fundamental of the system is built on [`ConnectionBase`](#leads.comm.prototype.ConnectionBase), not
 [`Connection`](#leads.comm.prototype.Connection). Therefore, you can use any implementation of
