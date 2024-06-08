@@ -1,7 +1,8 @@
 # Communication System
 
 In LEADS, we provide a C/S communication system that is designed for TCP/IP protocol but can also be extended to other
-custom protocols.
+custom protocols. The philosophy of this system is that sending is the only active operation for both server and
+client. All other operations including receiving must be done through callback methods.
 
 ## Server
 
@@ -102,6 +103,8 @@ server.close()
 
 ## Client
 
+Unlike a server, a [`Client`](#leads.comm.client.client.Client) holds only one connection.
+
 ### Create a Client
 
 You should always use [`create_client()`](#leads.comm.client.create_client) instead of the constructor.
@@ -144,6 +147,43 @@ class MyCallback(Callback):
 
 
 client: Client = create_client(callback=MyCallback())
+```
+
+### Start the Client
+
+```python
+from leads.comm import create_client, Client, start_client
+
+parallel: bool = True
+address: str = "127.0.0.1"
+client: Client = create_client()
+start_client(address, client, parallel)
+```
+
+`address` can be a domain or an IP address.
+
+`parrallel` is `False` by default, meaning that it will run in the same thread in which you call
+[`start_server()`](#leads.comm.server.start_server). If you wish not to block the main thread, set `parallel`
+to `True` like the example above.
+
+### Send a Message
+
+```python
+from leads.comm import create_client, Client, start_client
+
+address: str = "127.0.0.1"
+client: Client = start_client(address, create_client())
+client.send(b"Hello world")
+```
+
+### Close the Client
+
+```python
+from leads.comm import create_client, Client, start_client
+
+address: str = "127.0.0.1"
+client: Client = start_client(address, create_client())
+client.close()
 ```
 
 ## Connection
