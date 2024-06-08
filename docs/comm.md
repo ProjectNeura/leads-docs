@@ -68,8 +68,8 @@ start_server(server, parallel)
 ```
 
 `parrallel` is `False` by default, meaning that it will run in the same thread in which you call
-[`start_server()`](#leads.comm.server.start_server). If you wish not to block the main thread, set `parallel`
-to `True` like the example above.
+[`start_server()`](#leads.comm.server.start_server). If you wish not to block the main thread, set `parallel` to `True`
+like the example above.
 
 ### Broadcast to Clients
 
@@ -163,8 +163,8 @@ start_client(address, client, parallel)
 `address` can be a domain or an IP address.
 
 `parrallel` is `False` by default, meaning that it will run in the same thread in which you call
-[`start_server()`](#leads.comm.server.start_server). If you wish not to block the main thread, set `parallel`
-to `True` like the example above.
+[`start_client()`](#leads.comm.client.start_client). If you wish not to block the main thread, set `parallel` to `True`
+like the example above.
 
 ### Send a Message
 
