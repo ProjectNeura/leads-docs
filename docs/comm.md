@@ -9,7 +9,7 @@ A [`Server`](#leads.comm.server.server.Server) is a pool that consists of multip
 
 ### Create a Server
 
-You should always use [`create_server()`](#leads.comm.server.__init__.create_server) instead of the constructor.
+You should always use [`create_server()`](#leads.comm.server.create_server) instead of the constructor.
 
 ```python
 from leads.comm import create_server, Server
@@ -25,52 +25,125 @@ has not been started.
 
 You can pass a [`Callback`](#leads.comm.prototype.Callback) object when creating the server.
 
-For example, this code prints every message when it is received.
-
 ```python
 from typing import override
 from leads import L
-from leads.comm import create_server, Server, Callback, Service
+from leads.comm import create_server, Server, Callback, Service, ConnectionBase
 
 
 class MyCallback(Callback):
     @override
+    def on_initialize(self, service: Service) -> None:
+        L.info("Initialized")
+
+    @override
+    def on_connect(self, service: Service, connection: ConnectionBase) -> None:
+        L.info("Connected")
+
+    @override
     def on_receive(self, service: Service, msg: bytes) -> None:
         L.info(msg.decode())
 
+    @override
+    def on_fail(self, service: Service, error: Exception) -> None:
+        L.error(repr(error))
 
-port: int = 9000
-server: Server = create_server(port, MyCallback())
+    @override
+    def on_disconnect(self, service: Service, connection: ConnectionBase) -> None:
+        L.info("Disconnected")
+
+
+server: Server = create_server(callback=MyCallback())
 ```
 
 ### Start the Server
 
 ```python
-from typing import override
-from leads import L
-from leads.comm import create_server, Server, Callback, Service, start_server
+from leads.comm import create_server, Server, start_server
 
-
-class MyCallback(Callback):
-    @override
-    def on_receive(self, service: Service, msg: bytes) -> None:
-        L.info(msg.decode())
-
-
-port: int = 9000
-parallel: bool = False
-server: Server = create_server(port, MyCallback())
+parallel: bool = True
+server: Server = create_server()
 start_server(server, parallel)
 ```
 
 `parrallel` is `False` by default, meaning that it will run in the same thread in which you call
-[`start_server()`](#leads.comm.server.__init__.start_server). If you wish not to block the main thread, set `parallel`
-to `True`.
+[`start_server()`](#leads.comm.server.start_server). If you wish not to block the main thread, set `parallel`
+to `True` like the example above.
 
 ### Broadcast to Clients
 
 To send a message to all clients, you can use [`broadcast()`](#leads.comm.server.server.Server.broadcast) method.
 
+```python
+from leads.comm import create_server, Server, start_server
+
+server: Server = start_server(create_server())
+server.broadcast(b"Hello world")
+```
+
+### Get the Number of Connections
+
+```python
+from leads import L
+from leads.comm import create_server, Server, start_server
+
+server: Server = start_server(create_server())
+L.info(str(server.num_connections()))
+```
+
+### Close the Server
+
+```python
+from leads.comm import create_server, Server, start_server
+
+server: Server = start_server(create_server())
+server.close()
+```
+
 ## Client
+
+### Create a Client
+
+You should always use [`create_client()`](#leads.comm.client.create_client) instead of the constructor.
+
+```python
+from leads.comm import create_client, Client
+
+port: int = 9000
+client: Client = create_client(port)
+```
+
+You can use the same callback methods as the [server](#assign-callback-methods).
+
+```python
+from typing import override
+from leads import L
+from leads.comm import create_client, Client, Callback, Service, ConnectionBase
+
+
+class MyCallback(Callback):
+    @override
+    def on_initialize(self, service: Service) -> None:
+        L.info("Initialized")
+
+    @override
+    def on_connect(self, service: Service, connection: ConnectionBase) -> None:
+        L.info("Connected")
+
+    @override
+    def on_receive(self, service: Service, msg: bytes) -> None:
+        L.info(msg.decode())
+
+    @override
+    def on_fail(self, service: Service, error: Exception) -> None:
+        L.error(repr(error))
+
+    @override
+    def on_disconnect(self, service: Service, connection: ConnectionBase) -> None:
+        L.info("Disconnected")
+
+
+client: Client = create_client(callback=MyCallback())
+```
 
 ## Connection
