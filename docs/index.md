@@ -35,6 +35,7 @@ plugin.md
 config.md
 device.md
 logger.md
+callback.md
 sft.md
 comm.md
 ```

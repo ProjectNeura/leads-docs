@@ -28,6 +28,10 @@ has not been started.
 
 You can pass a [`Callback`](#leads.comm.prototype.Callback) object when creating the server.
 
+:::{tip}
+This is a subclass of [`CallbackChain`](#leads.callback.CallbackCahin). Learn more about it [here](callback).
+:::
+
 ```python
 from typing import override
 from leads import L
