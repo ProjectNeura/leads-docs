@@ -12,24 +12,36 @@ may even overlap.
 
 ## Assign Callback Methods
 
-To properly handle the errors, we provide two callback methods: [`on_fail()`](#leads.sft.SystemFailureTracer.on_fail)
-and [`on_recover()`](#leads.sft.SystemFailureTracer.on_recover). Neither of them supports chain call. You can assign
-them simply by `=`.
+To properly handle the errors, we provide 4 callback methods: [`on_fail()`](#leads.sft.SystemFailureTracer.on_fail),
+[`on_recover()`](#leads.sft.SystemFailureTracer.on_recover),
+[`on_device_fail()`](#leads.sft.SystemFailureTracer.on_device_fail), and
+[`on_device_recover()`](#leads.sft.SystemFailureTracer.on_device_recover). Neither of them supports chain call. You can
+assign them simply by `=`.
 
 ```python
 from leads import L, SFT, Device, SuspensionEvent
 
 
-def on_fail(device: Device, event: SuspensionEvent) -> None:
-    L.info(f"Device {device.tag()} caused {event.system} to be suspended: {event}")
+def on_fail(event: SuspensionEvent) -> None:
+    L.info(f"System {event.system} raised an error: {event.cause}")
 
 
-def on_recover(device: Device, event: SuspensionEvent) -> None:
-    L.info(f"Device {device.tag()} caused {event.system} to be recovered: {event}")
+def on_recover(event: SuspensionEvent) -> None:
+    L.info(f"System {event.system} recovered")
+
+
+def on_device_fail(device: Device, error: str | Exception) -> None:
+    L.info(f"Device {device} raised an error: {error}")
+
+
+def on_device_recover(device: Device) -> None:
+    L.info(f"Device {device} recovered")
 
 
 SFT.on_fail = on_fail
 SFT.on_recover = on_recover
+SFT.on_device_fail = on_device_fail
+SFT.on_device_recover = on_device_recover
 ```
 
 ## Mark the Device
