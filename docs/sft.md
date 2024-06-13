@@ -48,4 +48,19 @@ SFT.on_device_recover = on_device_recover
 
 To use the tracer in a device, the device must be marked first. One device can be assigned to one primary system and
 multiple related systems. There is no difference between the two types of systems. The divergence is just a historical
-issue. All systems will be equally notified.
+issue. All systems will be equally notified. It is recommended to mark the device in
+[`initialize()`](#leads.dt.device.Device.initialize).
+
+```python
+from typing import override
+from leads import controller, MAIN_CONTROLLER, mark_device
+from leads_emulation import RandomController
+
+
+@controller(MAIN_CONTROLLER)
+class MainController(RandomController):
+    @override
+    def initialize(self, *parent_tags: str) -> None:
+        super().initialize(*parent_tags)
+        mark_device(self, "SYSTEM_A", "SYSTEM_B", "SYSTEM_C")
+```
