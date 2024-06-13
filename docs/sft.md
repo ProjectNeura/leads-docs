@@ -48,8 +48,12 @@ SFT.on_device_recover = on_device_recover
 
 To use the tracer in a device, the device must be marked first. One device can be assigned to one primary system and
 multiple related systems. There is no difference between the two types of systems. The divergence is just a historical
-issue. All systems will be equally notified. It is recommended to mark the device in
+issue. All systems will be equally notified.
+
+:::{tip}
+It is recommended to mark the device in
 [`initialize()`](#leads.dt.device.Device.initialize).
+:::
 
 ```python
 from typing import override
