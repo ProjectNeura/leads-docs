@@ -29,7 +29,7 @@ Interestingly, these 3-phase BLDC motors are widely used in power plants as gene
 it converts mechanical energy, specifically kinetic energy, into electricity, which is exactly the principle of our
 kinetic energy recovery system.
 
-When the motor works as a generator, the wiring method remains unchanged, just that now the power flow exits the
+When the motor works as a generator, the wiring method remains unchanged, just that now the current flow exits the
 controller and feeds the backend through the anode (red) and returns through the cathode (black).
 
 :::{warning}
