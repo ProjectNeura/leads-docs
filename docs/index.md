@@ -32,6 +32,7 @@ vec/vc.md
 :caption: ⚡️ Project Thor
 thor/index.md
 thor/motors.md
+thor/backend.md
 ```
 
 ```{toctree}

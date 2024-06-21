@@ -8,7 +8,7 @@ We use BLDC (Brushless DC) motors that are supplied to electric bicycles for sev
 tend to be more mature and standardized. Such a motor usually comes with a corresponding controller from the same
 manufacture.
 
-![img.png](../_static/motor_controller.png)
+![motor-controller.png](../_static/motor-controller.png)
 
 This image above is an example of the controller. All BLDC controllers should have 5 contacts like it is shown.
 
