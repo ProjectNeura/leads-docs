@@ -12,11 +12,11 @@ manufacture.
 
 This image above is an example of the controller. All BLDC controllers should have 5 contacts like it is shown.
 
-| Color               | Usage                         |
-|---------------------|-------------------------------|
-| Yellow, Green, Blue | 3 phases that go to the motor |
-| Red                 | Anode (+)                     |
-| Black               | Cathode (-)                   |
+| Color               | Usage                             |
+|---------------------|-----------------------------------|
+| Yellow, Green, Blue | The 3 phases that go to the motor |
+| Red                 | Anode (+)                         |
+| Black               | Cathode (-)                       |
 
 The DC power from the backend enters the controller through the anode (red) and leaves through the cathode (black).
 
