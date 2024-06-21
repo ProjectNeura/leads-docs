@@ -20,10 +20,18 @@ To get familiar with the framework, definitely check out our official example: [
 ```{toctree}
 :hidden:
 :glob:
-:caption: ⚡️ VeC
+:caption: 🏎️ LEADS VeC
 vec/index.md
 vec/user-manual.md
 vec/vc.md
+```
+
+```{toctree}
+:hidden:
+:glob:
+:caption: ⚡️ Project Thor
+thor/index.md
+thor/motors.md
 ```
 
 ```{toctree}
