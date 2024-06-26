@@ -4,6 +4,13 @@ If you are a member of the [VeC Project](https://www.villanovacollege.org/giving
 access to assets of LEADS VeC (not included as assets of LEADS). Ask your contact for access to the
 [LEADS VeC Asset Repository](https://github.com/ProjectNeura/LEADS-VeC-Assets).
 
+Over time, LEADS has grown into a giant project spanning multiple fields. Extensions of LEADS, such as LEADS Jarvis and
+Project Thor, are no longer limited to the field of software engineering, but range from data science, deep learning,
+artificial intelligence, to physical engineering and electronic engineering. It is not a simple task to fully understand
+and be familiar with the entire LEADS. Therefore, LEADS is divided into multiple sub-warehouses according to the fields
+involved. Each warehouse has an independent management system, but they are all guided and supervised by the VeC Steering
+Council.
+
 ## We are Looking for You
 
 We are looking for new members of the VeC Steering Council. To quickly qualify yourself, prepare for these questions.
