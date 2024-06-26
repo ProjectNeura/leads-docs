@@ -59,6 +59,13 @@ arduino/index.md
 ```{toctree}
 :hidden:
 :glob:
+:caption: 🪬 Jarvis
+jarvis/index.md
+```
+
+```{toctree}
+:hidden:
+:glob:
 :caption: 🪟 GUI
 gui.md
 ```
