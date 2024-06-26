@@ -38,6 +38,13 @@ thor/backend.md
 ```{toctree}
 :hidden:
 :glob:
+:caption: 🪬 LEADS Jarvis
+jarvis/index.md
+```
+
+```{toctree}
+:hidden:
+:glob:
 :caption: 🛠️ Framework
 context.md
 plugin.md
@@ -52,15 +59,8 @@ comm.md
 ```{toctree}
 :hidden:
 :glob:
-:caption: 🎛️ Arduino
+:caption: 🎛️ LEADS Arduino
 arduino/index.md
-```
-
-```{toctree}
-:hidden:
-:glob:
-:caption: 🪬 Jarvis
-jarvis/index.md
 ```
 
 ```{toctree}
