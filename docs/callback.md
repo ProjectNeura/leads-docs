@@ -128,3 +128,8 @@ if __name__ == '__main__':
 
 The output should be printing both "My callback is called with an argument name=test_case_2" and "User B's callback is
 called with an argument name=test_case_2".
+
+## Existing Callback Classes
+
+The two main callback classes are [`EventListener`](#leads.event.EventListener) and
+[`Callback`](#leads.comm.prototype.Callback).
