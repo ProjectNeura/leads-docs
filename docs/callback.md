@@ -3,7 +3,7 @@
 # Callback
 
 Callback is a philosophy that is commonly used in LEADS. Some come in the form of callback objects, while others come
-in the form of single functions. This article only discusses the former, which are commonly used. If you encounter the
+in the form of single functions. This article only discusses the former, which are more common. If you encounter the
 latter, they are usually explained in the specific usage.
 
 ## Callback Chain
