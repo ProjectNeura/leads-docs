@@ -140,3 +140,22 @@ from leads import ConfigTemplate, load_config, register_config
 register_config(load_config("path/to/the/config.json", ConfigTemplate))
 ```
 
+## Get the Registered Configuration Object
+
+In [Register the Configuration Object](#register-the-configuration-object), we have registered the context. Now let's
+see the getter method.
+
+```python
+from leads import ConfigTemplate, get_config
+
+config: ConfigTemplate | None = get_config()
+```
+
+This will return `None` if there is no configuration object registered. You can also require a nonnull configuration
+object by calling [`require_config`](#leads.config.registry.require_config).
+
+```python
+from leads import ConfigTemplate, require_config
+
+config: ConfigTemplate = require_config()
+```
