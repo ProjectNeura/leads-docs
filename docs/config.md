@@ -10,20 +10,21 @@ from leads import ConfigTemplate, load_config
 config: ConfigTemplate = load_config("path/to/the/config.json", ConfigTemplate)
 ```
 
-[`load_config`](#leads.config.registry.load_config) will return the specified type, which is 
-[`ConfigTemplate`](#leads.config.template.ConfigTemplate) in this case. The configuration object returned is already 
+[`load_config`](#leads.config.registry.load_config) will return the specified type, which is
+[`ConfigTemplate`](#leads.config.template.ConfigTemplate) in this case. The configuration object returned is already
 [frozen](#readonly-and-writable-configurations).
 
 ### Custom Configurations
 
 :::{important}
-Custom attribute declarations should always come before calling 
+Custom attribute declarations should always come before calling
 [`super().__init__()`](#leads.config.template.ConfigTemplate).
 :::
 
 ```python
 from typing import Any
 from leads import ConfigTemplate, load_config
+
 
 class MyConfig(ConfigTemplate):
     def __init__(self, base: dict[str, Any]) -> None:
@@ -46,6 +47,7 @@ object is frozen. If you want them writable, name them after "w_".
 from typing import Any
 from leads import ConfigTemplate
 
+
 class MyConfig(ConfigTemplate):
     def __init__(self, base: dict[str, Any]) -> None:
         self.w_writable_config: str = "this is a writable configuration"
@@ -53,13 +55,13 @@ class MyConfig(ConfigTemplate):
 ```
 
 :::{tip}
-The configuration object will be set to frozen once [`super().__init__()`](#leads.config.template.ConfigTemplate) is 
+The configuration object will be set to frozen once [`super().__init__()`](#leads.config.template.ConfigTemplate) is
 called.
 :::
 
 ## Explicit and Implicit Configurations
 
-There are two kinds of configurations: explicit and implicit. Explicit configurations refer to the attributes and 
+There are two kinds of configurations: explicit and implicit. Explicit configurations refer to the attributes and
 implicit configurations are those in the base dictionary.
 
 ### Set an Explicit Configuration
@@ -120,7 +122,7 @@ L.info(config["w_debug_level"])
 
 :::{tip}
 Modifying the implicit configurations will not affect the explicit configurations. However,
-[`load()`](#leads.config.template.ConfigTemplate.load) does call 
+[`load()`](#leads.config.template.ConfigTemplate.load) does call
 [`refresh()`](#leads.config.template.ConfigTemplate.refresh) for you.
 :::
 
