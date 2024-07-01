@@ -91,6 +91,20 @@ config.set("w_debug_level", "INFO")
 config["w_debug_level"] = "INFO"
 ```
 
+:::{important}
+Setting an implicit configuration will also affect the corresponding explicit configuration if there is one. For
+example, in the following case prints "INFO".
+
+```python
+from leads import ConfigTemplate, L
+
+config: ConfigTemplate = ConfigTemplate({})
+config.set("w_debug_level", "INFO")
+L.info(config.w_debug_level)
+```
+
+:::
+
 ### Get an Implicit Configuration
 
 ```python
