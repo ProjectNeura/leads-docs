@@ -5,7 +5,8 @@
 ![PyPI - Downloads](https://img.shields.io/pypi/dm/leads)
 ![GitHub Release Date - Published_At](https://img.shields.io/github/release-date/ProjectNeura/LEADS)
 
-Enable your racing car with a powerful control system in a gorgeous look.
+Enable your racing car with powerful, data-driven instrumentation, control, and analysis systems, all wrapped up in a
+gorgeous look.
 
 :::{tip}
 
