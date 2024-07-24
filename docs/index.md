@@ -5,7 +5,7 @@
 ![PyPI - Downloads](https://img.shields.io/pypi/dm/leads)
 ![GitHub Release Date - Published_At](https://img.shields.io/github/release-date/ProjectNeura/LEADS)
 
-Build your race-ready electric car in 10 minutes with powerful electronic stability control and a modern dashboard.
+Enable your racing car with a powerful control system in a gorgeous look.
 
 :::{tip}
 
