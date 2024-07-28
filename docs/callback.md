@@ -69,7 +69,7 @@ class UserCallbackA(MyCallback):
         L.info(f"My callback is called with an argument name={name}")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     my_business = MyBusiness()
     my_business.set_callback(UserCallbackA())
     my_business.do_something("test_case_1")
@@ -119,7 +119,7 @@ class UserCallbackB(MyCallback):
         L.info(f"User B's callback is called with an argument name={name}")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     my_business = MyBusiness()
     my_business.set_callback(UserCallbackA())
     my_business.set_callback(UserCallbackB())
