@@ -103,6 +103,7 @@ class MyDevice(Device):
 
     @_override
     def initialize(self, *parent_tags: str) -> None:
+        super().initialize(*parent_tags)
         L.info("My device is initializing")
 
     @_override
@@ -114,3 +115,8 @@ class MyDevice(Device):
     def read(self) -> int:
         return self._value
 ```
+
+:::{important}
+In most cases you should call `super().initialize(*parent_tags)` unless you know you want to break the initialization
+chain.
+:::

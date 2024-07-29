@@ -65,6 +65,6 @@ from leads_emulation import RandomController
 class MainController(RandomController):
     @override
     def initialize(self, *parent_tags: str) -> None:
-        super().initialize(*parent_tags)
         mark_device(self, "SYSTEM_A", "SYSTEM_B", "SYSTEM_C")
+        super().initialize(*parent_tags)
 ```
