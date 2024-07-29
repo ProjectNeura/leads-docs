@@ -82,7 +82,7 @@ void loop() {
 }
 ```
 
-## Cooperate on the Host's end with Python
+## Cooperate on the Host's End with Python
 
 In the example above, we have created a sketch for the Arduino. Now we extend this example and receive the readings on
 the host's end.
