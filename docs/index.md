@@ -62,6 +62,9 @@ comm.md
 :glob:
 :caption: 🎛️ LEADS Arduino
 arduino/index.md
+arduino/sketch.md
+arduino/input.md
+arduino/output.md
 ```
 
 ```{toctree}
