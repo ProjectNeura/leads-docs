@@ -24,6 +24,7 @@ To get familiar with the framework, definitely check out our official example: [
 :caption: 🏎️ LEADS VeC
 vec/index.md
 vec/user-manual.md
+vec/safety-instructions.md
 vec/vc.md
 ```
 
