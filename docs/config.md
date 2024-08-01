@@ -1,6 +1,8 @@
 # Configuration System
 
-We provide a configuration system to help load local configuration files. We use JSON as the only format.
+We provide a configuration system to help load local configuration files. We use JSON as the only format. There is a
+clear distinction between runtime arguments and configurations. Runtime arguments are usually considered temporary,
+meaning they tend to be different every time, while configurations do not often change.
 
 ## Load a Configuration File
 
