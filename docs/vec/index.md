@@ -11,3 +11,15 @@ To get started, read [this](https://github.com/ProjectNeura/LEADS) first.
 :::{note}
 The reproduction guide is planned to be available on 2024-9-1.
 :::
+
+## LEADS VeC Remote Analyst
+
+## LEADS VeC Data Processor
+
+### Workflows
+
+All workflows start with a dataset.
+
+```yaml
+dataset: path/to/the/data.csv
+```
