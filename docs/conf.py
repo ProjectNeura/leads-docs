@@ -5,6 +5,7 @@
 
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
+from os import environ
 from os.path import relpath
 from sysconfig import get_paths
 
@@ -60,6 +61,7 @@ autodoc2_packages = [
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
+html_baseurl = environ.get("READTHEDOCS_CANONICAL_URL", "")
 html_title = "LEADS Docs"
 html_logo = "https://projectneura.org/img/logo.png"
 html_favicon = "https://projectneura.org/img/logo.png"
