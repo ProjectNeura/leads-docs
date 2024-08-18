@@ -8,7 +8,11 @@ LEADS aims to provide robust deep learning technology but also keep it lightweig
 learning models in an optional package.
 
 :::{tip}
+
+```shell
 pip install leads-jarvis
+```
+
 :::
 
 ## Terms and Conditions
