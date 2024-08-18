@@ -9,7 +9,7 @@ right foot in a position to brake at any time.
 
 ## Carriers of LEADS VeC
 
-### Harness and Roll Cage
+### Seat belt and Roll Cage
 
 Unless specific excuses, all vehicles equipped with LEADS VeC must have a five-point harness as well as a roll cage.
 
@@ -21,3 +21,15 @@ disconnected. This is to prevent loss of control in scenarios where the controll
 sabotages including power failure, short circuit, or sensor error.
 
 ## Before Start
+
+### Security Check
+
+Before starting and driving the vehicle, the user must carefully inspect the vehicle to ensure that all the
+above-mentioned design requirements are met and are still intact.
+
+After starting the vehicle, check the fault lights and press <kbd>Tab</kbd> to view the console logs and eliminate
+suspicious errors and warnings.
+
+### Functionality Check (Optional)
+
+Functionality check must be performed when a new version of LEADS VeC is installed.
