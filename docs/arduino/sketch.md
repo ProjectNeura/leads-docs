@@ -18,6 +18,7 @@ void setup() {
 }
 
 void loop() {
+    P.refresh();
     P.write("Hello World");
 }
 ```
@@ -36,6 +37,7 @@ void setup() {
 }
 
 void loop() {
+    P.refresh();
     P.write("Hello World");
 }
 ```
@@ -54,6 +56,7 @@ void setup() {
 }
 
 void loop() {
+    P.refresh();
     P.write("Hello World");
 }
 ```
@@ -78,6 +81,7 @@ void setup() {
 }
 
 void loop() {
+    P.refresh();
     returnFloat(P, VOLTAGE_SENSOR, VOT.read());
     delay(100);
 }
