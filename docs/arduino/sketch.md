@@ -5,12 +5,13 @@ On this page, you will learn how to create a sketch with our framework.
 ## Peer
 
 In LEADS Arduino, `Peer` represents the host that is connected through the hardware serial. You should not operate with
-`Serial` yourself because `Peer` does it for you.
+`Serial` yourself because `Peer` does it for you. The first argument is mandatory, it should be the tag of the Arduino
+itself in the device tree.
 
 ```cpp
 #include "LEADS.h"
 
-Peer P{};
+Peer P{"arduino_controller"};
 
 void setup() {
     P.initializeAsRoot();
@@ -28,7 +29,7 @@ You may specify the baud rate just like `Serial.begin()`.
 ```cpp
 #include "LEADS.h"
 
-Peer P{115200};
+Peer P{"arduino_controller", 115200};
 
 void setup() {
     P.initializeAsRoot();
@@ -46,7 +47,7 @@ You may specify the separator that is used to split the stream into messages.
 ```cpp
 #include "LEADS.h"
 
-Peer P{9600, "end;"};
+Peer P{"arduino_controller", 9600, "end;"};
 
 void setup() {
     P.initializeAsRoot();
@@ -68,7 +69,7 @@ The following example utilizes a voltage sensor.
 
 const int PIN_VOT[] = {A0};
 
-Peer P{};
+Peer P{"pc"};
 VoltageSensor VOT{30000.0, 7500.0, ArrayList<int>(PIN_VOT)};
 
 void setup() {
