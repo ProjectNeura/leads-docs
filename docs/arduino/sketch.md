@@ -98,7 +98,7 @@ host.
 ```python
 from typing import override
 
-from leads import controller, MAIN_CONTROLLER, require_config, VOLTAGE_SENSOR, device
+from leads import controller, MAIN_CONTROLLER, require_config, VOLTAGE_SENSOR, device, POWER_CONTROLLER
 from leads_arduino import ArduinoProto, VoltageSensor
 from leads_gui import Config
 
@@ -107,14 +107,14 @@ BAUD_RATE: int = config.get("baud_rate", 9600)
 POWER_CONTROLLER_PORT: str = config.get("power_controller_port", "COM3")
 
 
-@controller("pc", MAIN_CONTROLLER, (POWER_CONTROLLER_PORT, BAUD_RATE))
+@controller(POWER_CONTROLLER, MAIN_CONTROLLER, (POWER_CONTROLLER_PORT, BAUD_RATE))
 class PowerController(ArduinoProto):
     @override
     def read(self) -> dict[str, float]:
         return {"voltage": self.device(VOLTAGE_SENSOR).read()}
 
 
-@device(VOLTAGE_SENSOR, "pc")
+@device(VOLTAGE_SENSOR, POWER_CONTROLLER)
 class BatteryVoltageSensor(VoltageSensor):
     pass
 ```
