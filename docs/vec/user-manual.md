@@ -172,9 +172,6 @@ You may also add optional configurations. Learn more about the configurations
   "manual_mode": true,
   "fullscreen": true,
   "w_debug_level": "ERROR",
-  "gps_receiver_port": "/dev/...",
-  "wheel_speed_controller_port": "/dev/...",
-  "power_controller_port": "/dev/...",
   "front_wheel_diameter": 20,
   "rear_wheel_diameter": 26
 }
@@ -187,9 +184,6 @@ You may also add optional configurations. Learn more about the configurations
   "fullscreen": true,
   "refresh_rate": 60,
   "w_debug_level": "WARN",
-  "gps_receiver_port": "/dev/...",
-  "wheel_speed_controller_port": "/dev/...",
-  "power_controller_port": "/dev/...",
   "front_wheel_diameter": 20,
   "rear_wheel_diameter": 26
 }
@@ -201,9 +195,6 @@ You may also add optional configurations. Learn more about the configurations
 {
   "fullscreen": true,
   "refresh_rate": 60,
-  "gps_receiver_port": "/dev/...",
-  "wheel_speed_controller_port": "/dev/...",
-  "power_controller_port": "/dev/...",
   "front_wheel_diameter": 20,
   "rear_wheel_diameter": 26
 }
