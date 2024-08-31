@@ -72,7 +72,7 @@ The following example utilizes a voltage sensor.
 
 const int PIN_VOT[] = {A0};
 
-Peer P{"pc"};
+Peer P{POWER_CONTROLLER};
 VoltageSensor VOT{ArrayList<int>(PIN_VOT, 1), 30000.0, 7500.0};
 
 void setup() {
