@@ -73,7 +73,7 @@ The following example utilizes a voltage sensor.
 const int PIN_VOT[] = {A0};
 
 Peer P{"pc"};
-VoltageSensor VOT{30000.0, 7500.0, ArrayList<int>(PIN_VOT)};
+VoltageSensor VOT{ArrayList<int>(PIN_VOT, 1), 30000.0, 7500.0};
 
 void setup() {
     P.initializeAsRoot();
