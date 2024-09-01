@@ -253,13 +253,14 @@ See comments in "[devices.py](#leads_vec.devices)".
 
 ## Shortcuts
 
-| Key          | Usage              |
-|--------------|--------------------|
-| <kbd>1</kbd> | Turn on / off DTCS |
-| <kbd>2</kbd> | Turn on / off ABS  |
-| <kbd>3</kbd> | Turn on / off EBI  |
-| <kbd>4</kbd> | Turn on / off ATBS |
-| <kbd>T</kbd> | Time a lap         |
+| Key            | Usage               |
+|----------------|---------------------|
+| <kbd>1</kbd>   | Turn on / off DTCS  |
+| <kbd>2</kbd>   | Turn on / off ABS   |
+| <kbd>3</kbd>   | Turn on / off EBI   |
+| <kbd>4</kbd>   | Turn on / off ATBS  |
+| <kbd>T</kbd>   | Time a lap          |
+| <kbd>Tab</kbd> | Toggle debug window |
 
 ## Debug
 
