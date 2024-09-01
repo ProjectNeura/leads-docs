@@ -16,7 +16,7 @@ pip install leads
 
 :::
 
-To get familiar with the framework, definitely check out our official example: [LEADS VeC](leads_vec).
+To get familiar with the framework, definitely check out [LEADS VeC](leads_vec).
 
 ```{toctree}
 :hidden:
