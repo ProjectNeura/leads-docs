@@ -19,14 +19,14 @@ To properly handle the errors, we provide 4 callback methods: [`on_fail()`](#lea
 assign them simply by `=`.
 
 ```python
-from leads import L, SFT, Device, SuspensionEvent
+from leads import L, SFT, Device, SuspensionEvent, SuspensionExitEvent
 
 
 def on_fail(event: SuspensionEvent) -> None:
     L.info(f"System {event.system} raised an error: {event.cause}")
 
 
-def on_recover(event: SuspensionEvent) -> None:
+def on_recover(event: SuspensionExitEvent) -> None:
     L.info(f"System {event.system} recovered")
 
 
