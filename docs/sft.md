@@ -44,6 +44,9 @@ SFT.on_device_fail = on_device_fail
 SFT.on_device_recover = on_device_recover
 ```
 
+`SFT.on_fail` and `SFT.on_recover` are equivalent to [`pre_suspend()`](#leads.event.EventListener.pre_suspend) and
+[`post_suspend`](#leads.event.EventListener.post_suspend) respectively.
+
 ## Mark the Device
 
 To use the tracer in a device, the device must be marked first. One device can be assigned to one primary system and
