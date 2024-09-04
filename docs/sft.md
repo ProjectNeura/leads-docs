@@ -45,7 +45,7 @@ SFT.on_device_recover = on_device_recover
 ```
 
 `SFT.on_fail` and `SFT.on_recover` are equivalent to [`pre_suspend()`](#leads.event.EventListener.pre_suspend) and
-[`post_suspend`](#leads.event.EventListener.post_suspend) respectively.
+[`post_suspend()`](#leads.event.EventListener.post_suspend) respectively.
 
 ## Mark the Device
 
