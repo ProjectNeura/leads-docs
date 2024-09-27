@@ -1,7 +1,7 @@
 # Communication System
 
-In LEADS, we provide a C/S communication system that is designed for TCP protocol but can also be extended to other
-custom protocols. The philosophy of this system is that sending is the only active operation for both server and
+In LEADS, we provide a C/S communication system that is designed for the TCP protocol but can also be extended to other
+custom protocols. The philosophy of this system is that sending is the only active operation for both the server and the
 client. All other operations including receiving should be done passively through callback methods.
 
 ## Server
