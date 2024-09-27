@@ -1,6 +1,6 @@
 # Communication System
 
-In LEADS, we provide a C/S communication system that is designed for TCP/IP protocol but can also be extended to other
+In LEADS, we provide a C/S communication system that is designed for TCP protocol but can also be extended to other
 custom protocols. The philosophy of this system is that sending is the only active operation for both server and
 client. All other operations including receiving must be done through callback methods.
 
@@ -198,7 +198,7 @@ client.close()
 [`ConnectionBase`](#leads.comm.prototype.ConnectionBase) is the abstract base class of
 [`Connection`](#leads.comm.prototype.Connection). [`ConnectionBase`](#leads.comm.prototype.ConnectionBase) provides
 a set of tools to parse the stream into sentences and deal with the remainder with ease, whereas
-[`Connection`](#leads.comm.prototype.Connection) implements the abstract methods and specifies TCP/IP as the underlying
+[`Connection`](#leads.comm.prototype.Connection) implements the abstract methods and specifies TCP as the underlying
 protocol.
 
 The fundamental of the system is built on [`ConnectionBase`](#leads.comm.prototype.ConnectionBase), not
