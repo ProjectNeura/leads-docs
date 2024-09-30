@@ -11,7 +11,6 @@ We provide these great plugins:
 - [`ABS`](#leads.plugin.abs.ABS)
 - [`EBI`](#leads.plugin.ebi.EBI)
 - [`ATBS`](#leads.plugin.atbs.ATBS)
-- [`GPSSpeedCorrection`](#leads.plugin.gps_speed_correction.GPSSpeedCorrection) (not ESC)
 
 ## ESC Plugins
 
