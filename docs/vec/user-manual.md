@@ -29,7 +29,7 @@ It should look similar to this.
 Select the "Raspberry Pi Device" accordingly. For the "Operating System", **Ubuntu Desktop 22.04 LTS or later** is
 recommended. They are in "Other general-purpose OS".
 
-![rpi-imager-os.png](../_static/rpi-imager-os.png)
+![rpi-imager-os](../_static/rpi-imager-os.png)
 
 Select the "Storage" accordingly, then click "NEXT".
 
@@ -39,7 +39,7 @@ If a dialog like the one below pops up, just say yes.
 
 From then on, wait until this dialog shows up.
 
-![rpi-imager-finish.png](../_static/rpi-imager-finish.png)
+![rpi-imager-finish](../_static/rpi-imager-finish.png)
 
 Click "CONTINUE" and make sure the SD card has been **successfully ejected** before you remove it.
 
@@ -49,6 +49,28 @@ Insert the SD card to the Raspberry Pi and power up. Follow the instructions to 
 The installation is very likely to fail if you do not eject the SD card properly, or you click "Continue" too soon
 before Wi-Fi is fully connected (you will see during the installation process on the Raspberry Pi).
 :::
+
+## (Install the Operating System for the Orange Pi)
+
+Download the OS image for your device [here](https://joshua-riek.github.io/ubuntu-rockchip-download/). **Ubuntu Desktop
+22.04 LTS or later** is recommended.
+
+Extract the XZ compressed package you downloaded into a folder where a file that ends with ".img" should be there.
+
+Download and install the [balenaEtcher](https://etcher.balena.io).
+
+It should look similar to this.
+
+![balena-etcher](../_static/balena-etcher.png)
+
+Click "Flash from file" and choose the image file.
+
+Select the target accordingly, then click "Flash!".
+
+It will run a validation after flashed, then you are safe to unplug the SD card. If the validation fails, it is most
+likely because you selected the XZ file as the target instead of the uncompressed content.
+
+Insert the SD card to the Orange Pi and power up. Follow the instructions to install the system.
 
 ## Environment Setup
 
@@ -80,13 +102,16 @@ LEADS Version: ...
 LEADS VeC Version: ...
 ```
 
+### (Environment Variable)
+
+If you are using an Orange Pi, you have to set the environment variable. See
+[here](https://github.com/ProjectNeura/LEADS?tab=readme-ov-file#gpiozero-compatibility).
+
 ### Register LEADS VeC
 
 ```shell
 leads-vec -r systemd run
 ```
-
-You may close the program immediately after the window shows up.
 
 ```shell
 systemctl --user daemon-reload
@@ -98,16 +123,26 @@ Always use explicit startup until deployment. The logging information may not be
 during setup.
 
 ```shell
-systemctl --user stop leads-vec 
+systemctl --user stop leads-vec
 ```
 
 :::
+
+### (Environment Variable)
+
+If you are using an Orange Pi, you have to edit the service script. See
+[here](https://github.com/ProjectNeura/LEADS?tab=readme-ov-file#gpiozero-compatibility).
 
 ### Install FRP (Optional)
 
 Follow [this](https://github.com/ProjectNeura/LEADS?tab=readme-ov-file#frp) section to install FRP.
 
 Should you have membership in the VeC Project, please ask your contact for the FRP server credentials.
+
+### Enable FRP (Optional)
+
+Once you have FRP installed, enable it in the Systemd service by editing the service script that can usually be found at
+"/usr/local/leads/venv/python3.12/site-packages/leads_vec/_bootloader/leads-vec.service.sh".
 
 ### Reboot
 
