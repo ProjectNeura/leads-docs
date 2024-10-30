@@ -3,7 +3,17 @@
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/ProjectNeura/LEADS)
 ![PyPI](https://img.shields.io/pypi/v/leads)
 ![PyPI - Downloads](https://img.shields.io/pypi/dm/leads)
+![GitHub Release](https://img.shields.io/github/v/release/ProjectNeura/LEADS)
 ![GitHub Release Date - Published_At](https://img.shields.io/github/release-date/ProjectNeura/LEADS)
+
+:::{note}
+
+## News
+
+*LEADS: Lightweight Embedded Assisted Driving System* is published on [arXiv](https://arxiv.org/abs/2410.17554) and
+ready for open review!
+
+:::
 
 Enable your racing car with powerful, data-driven instrumentation, control, and analysis systems, all wrapped up in a
 gorgeous look.
@@ -17,15 +27,6 @@ pip install leads
 :::
 
 To get familiar with the framework, definitely check out [LEADS VeC](leads_vec) first.
-
-:::{note}
-
-## News
-
-*LEADS: Lightweight Embedded Assisted Driving System* is published on [arXiv](https://arxiv.org/abs/2410.17554) and
-ready for open review!
-
-:::
 
 ## Citation
 
