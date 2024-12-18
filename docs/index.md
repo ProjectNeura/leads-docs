@@ -26,7 +26,28 @@ pip install leads
 
 :::
 
-To get familiar with the framework, definitely check out [LEADS VeC](leads_vec) first.
+## How does LEADS Help VeC?
+
+[LEADS VeC](leads_vec) is a template of how we apply LEADS in our team. We strongly recommend you start with it before
+using the framework.
+
+VeC99, the first car equipped with LEADS, is a three-wheel rear-drive electric racing car. We have two Arduino Micros as
+the power controller and the wheel speed controller. The power controller is responsible for the battery voltage and
+pedal positions, whereas the wheel speed controller processes IMU input, as well as pauses from the three hall effect,
+switches into wheel speeds. An Orange Pi 5 Pro assembles data from the microcontrollers together with some other GPIO
+devices and displays information on a touch screen located under the hood.
+
+![dashboard](_static/dashboard.png)
+
+A mobile hotspot is used to provide consistent internet connection for the Orange Pi. All raw data is sent to laptops in
+the pit crew that have LEADS VeC Remote Analyst running over the public internet through a proxy server that has a
+static public IP address. The data frames are then saved in a CSV file on one of the laptops for further analysis. LEADS
+VeC Remote Analyst also provides a set of APIs that allow pit crew members intuitively view the status of the vehicle on
+the online dashboard.
+
+![rc](_static/rc.png)
+
+After that, we run LEADS VeC Data Processor with a customized workflow configuration to review our performance.
 
 ## Citation
 
