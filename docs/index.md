@@ -33,8 +33,8 @@ using the framework.
 
 VeC99, the first car equipped with LEADS, is a three-wheel rear-drive electric racing car. We have two Arduino Micros as
 the power controller and the wheel speed controller. The power controller is responsible for the battery voltage and
-pedal positions, whereas the wheel speed controller processes IMU input, as well as pauses from the three hall effect,
-switches into wheel speeds. An Orange Pi 5 Pro assembles data from the microcontrollers together with some other GPIO
+pedal positions, whereas the wheel speed controller processes IMU input, as well as pauses from the three hall effect
+switches, into wheel speeds. An Orange Pi 5 Pro assembles data from the microcontrollers together with some other GPIO
 devices and displays information on a touch screen located under the hood.
 
 ![dashboard](_static/dashboard.png)
