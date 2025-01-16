@@ -2,7 +2,9 @@
 
 If you are a member of the [VeC Project](https://www.villanovacollege.org/giving/vec-project), you are granted with
 access to assets of LEADS VeC (not included as assets of LEADS). Ask your contact for access to the
-[LEADS VeC Asset Repository](https://github.com/ProjectNeura/LEADS-VeC-Assets).
+[LEADS VeC Asset Repository](https://github.com/ProjectNeura/LEADS-VeC-Assets). For the reverse proxy server, we
+recommend any personnel who take over the integration of LEADS with the VeC team consider the
+[Lightsail](https://lightsail.aws.amazon.com) servers powered by AWS.
 
 Over time, LEADS has grown into a giant project spanning multiple fields. Extensions of LEADS, such as LEADS Jarvis
 and Project Thor, are no longer limited to the field of software engineering, but range from data science, deep
