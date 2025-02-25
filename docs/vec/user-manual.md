@@ -168,6 +168,10 @@ Should you have membership in the VeC Project, please ask your contact for the F
 Once you have FRP installed, enable it in the Systemd service by editing the service script that can usually be found at
 "/usr/local/leads/venv/python3.12/site-packages/leads_vec/_bootloader/leads-vec.service.sh".
 
+```shell
+leads-vec -c /usr/local/config.json -r reverse_proxy run
+```
+
 ### Reboot
 
 Reboot the Raspberry Pi to apply changes.
@@ -325,3 +329,50 @@ See comments in "[devices.py](#leads_vec.devices)".
 
 If you run into any error, first search in the existing [issues](https://github.com/ProjectNeura/LEADS/issues). If it
 has not been encountered, please post a new issue.
+
+## LEADS VeC RC
+
+### Create an FRP Reverse Proxy Server
+
+Purchase a cloud server that has a public IP address. Use the same [procedure](#install-frp-optional) to install FRP on
+the server.
+
+### Start an FRP Service
+
+```shell
+apt install tmux
+```
+
+Create a persistent process and start the service.
+
+```shell
+tmux new -s frp
+cd /usr/local/frp
+./frps -c frps.toml
+```
+
+Close the terminal.
+
+### Start LEADS VeC RC
+
+On your laptop, install LEADS.
+
+```shell
+pip install leads[leads-vec-rc]
+```
+
+Create a configuration file.
+
+```json
+{
+   "comm_addr": "127.0.0.1",
+   "save_data": true,
+   "car_width": 2,
+   "car_length": 1,
+   "car_mass": 400,
+   "car_center_of_mass": 0.25
+}
+```
+
+Start LEADS VeC Remote Analyst, following the
+instructions [here](https://github.com/ProjectNeura/LEADS?tab=readme-ov-file#remote-analyst).
