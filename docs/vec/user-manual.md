@@ -20,10 +20,10 @@ If I can still keep up with the fashion, wheel speed sensors should be 3 or 4 ha
 
 ![wheel-speed-sensors](../_static/wheel-speed-sensors.jpg)
 
-You must connect the wheel speed sensors to the designated pins. You can find the pinout diagrams in the
+You must connect the wheel speed sensors to the designated pins. You can find the pinout diagrams for Arduino in the
 [Appendix](leads_vec_appendix_arduino). You do not need all 5 sensors. A three-wheel vehicle would have 3 sensors, and
-a four-wheel vehicle would have 4 sensors. Pinout diagrams and input voltage of the hall switches can be found in the
-[Appendix](leads_vec_appendix_wheel_speed_controller_wheel_speed_sensor).
+a four-wheel vehicle would have 4 sensors. Pinout diagrams and input voltage for the hall switches can be found in the
+[Appendix](leads_vec_appendix_wheel_speed_controller_wheel_speed_sensor) as well.
 
 | Position          | Pin    |
 |-------------------|--------|
