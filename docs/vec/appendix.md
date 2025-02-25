@@ -48,6 +48,7 @@ Last updated: 2025-02-24
 | Specs                    | [AMS1117_datasheet.pdf](../_static/AMS1117_datasheet.pdf), [YwRobot_Breadboard_Power_Supply_MB-V2.pdf](../_static/YwRobot_Breadboard_Power_Supply_MB-V2.pdf) |
 | Corresponding Vehicle(s) | VeC99, VeC 2.0                                                                                                                                               |
 | Installed                | VeC99                                                                                                                                                        |
+| Supported Output Voltage | 3.3V, 5.0V                                                                                                                                                   |
 
 (leads_vec_appendix_power_voltage_sensor)=
 
