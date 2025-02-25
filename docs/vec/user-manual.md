@@ -6,17 +6,34 @@ This user manual shall guide you through the whole reproduction process of LEADS
 This user manual is written in steps in order.
 :::
 
+## Connect the Voltage Sensor
+
+The voltage sensor is theoretically a voltage distributor. Connect the two measuring ends with the battery in parallel.
+
+![voltage-sensor](../_static/voltage-sensor.png)
+
+Detailed specs of the voltage sensor can be found in the [Appendix](leads_vec_appendix_power_voltage_sensor).
+
 ## Connect the Wheel Speed Sensors
 
-You must connect the wheel speed sensors to the designated pins.
+If I can still keep up with the fashion, wheel speed sensors should be 3 or 4 hall switches that each has 3 pins.
 
-| Position          | Pin |
-|-------------------|-----|
-| Left Front Wheel  | 2   |
-| Right Front Wheel | 3   |
-| Left Rear Wheel   | 4   |
-| Right Rear Wheel  | 5   |
-| Center Rear Wheel | 6   |
+![wheel-speed-sensors](../_static/wheel-speed-sensors.jpg)
+
+You must connect the wheel speed sensors to the designated pins. You can find the pinout diagrams in the
+[Appendix](leads_vec_appendix_arduino). You do not need all 5 sensors. A three-wheel vehicle would have 3 sensors, and
+a four-wheel vehicle would have 4 sensors. Pinout diagrams and input voltage of the hall switches can be found in the
+[Appendix](leads_vec_appendix_wheel_speed_controller_wheel_speed_sensor).
+
+| Position          | Pin    |
+|-------------------|--------|
+| Left Front Wheel  | 2 (D2) |
+| Right Front Wheel | 3 (D3) |
+| Left Rear Wheel   | 4 (D4) |
+| Right Rear Wheel  | 5 (D5) |
+| Center Rear Wheel | 6 (D6) |
+
+To configure the power supply modules, see the [Appendix](leads_vec_appendix_power_power_supply_module).
 
 ## Install the Operating System for the Raspberry Pi
 
