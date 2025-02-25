@@ -35,6 +35,13 @@ a four-wheel vehicle would have 4 sensors. Pinout diagrams and input voltage for
 
 To configure the power supply modules, see the [Appendix](leads_vec_appendix_power_power_supply_module).
 
+## Connect the Accelerometer
+
+- BNO085 Gnd to board Gnd
+- BNO085 SCL to board TX
+- BNO085 SDA to board RX
+- BNO085 P1 to board 3.3V
+
 ## Install the Operating System for the Raspberry Pi
 
 Download and install the [Raspberry Pi Imager](https://www.raspberrypi.com/software).

@@ -93,3 +93,14 @@ explanation [here](../_static/Introduction%20and%20Application%20of%20Hall%20Dev
 | Specs                    | [ES3144_en.pdf](../_static/ES3144_en.pdf) |
 | Corresponding Vehicle(s) | VeC 2.0                                   |
 | Installed                | None                                      |
+
+### Accelerometer
+
+#### Adafruit 9-DOF IMU BNO085
+
+| K                        | V                                                                                                                                                              |
+|--------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Vendor                   | [DigiKey](https://www.digikey.com/en/products/detail/adafruit-industries-llc/4754/13426653?s=N4IgjCBcoLQBxVAYygMwIYBsDOBTANCAPZQDa4ArAEwIC6AvvYVWSACwDsFbIDQA) |
+| Specs                    | [adafruit-9-dof-orientation-imu-fusion-breakout-bno085.pdf](../_static/adafruit-9-dof-orientation-imu-fusion-breakout-bno085.pdf)                              |
+| Corresponding Vehicle(s) | VeC99, VeC 2.0                                                                                                                                                 |
+| Installed                | VeC99                                                                                                                                                          |
