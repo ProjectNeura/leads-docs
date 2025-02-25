@@ -73,6 +73,7 @@ vec/index.md
 vec/user-manual.md
 vec/safety-instructions.md
 vec/vc.md
+vec/appendix.md
 ```
 
 ```{toctree}
