@@ -4,7 +4,7 @@ This appendix keeps track some tech specs of the critical electronics in subsyst
 below gets adopted, please inform the VeC Steering Council and let us update this page.
 
 To fully understand how these components work, you are encouraged to learn some Simplified Chinese because nearly all of
-them are made or assembled in RPC, thus a lot of documents are only available in Simplified Chinese. Being able to
+them are made or assembled in China, thus a lot of documents are only available in Simplified Chinese. Being able to
 switch between English and Simplified Chinese would be extremely helpful if you are pursuing a career in Electrical
 Engineering.
 
