@@ -16,7 +16,7 @@ Detailed specs of the voltage sensor can be found in the [Appendix](leads_vec_ap
 
 ## Connect the Wheel Speed Sensors
 
-If I can still keep up with the fashion, wheel speed sensors should be 3 or 4 hall switches that each has 3 pins.
+If I can still keep up with the fashion, wheel speed sensors should be 3 or 4 Hall switches that each has 3 pins.
 
 ![wheel-speed-sensors](../_static/wheel-speed-sensors.jpg)
 
@@ -33,7 +33,7 @@ a four-wheel vehicle would have 4 sensors. Pinout diagrams and input voltage for
 | Right Rear Wheel  | 5 (D5) |
 | Center Rear Wheel | 6 (D6) |
 
-To configure the power supply modules, see the [Appendix](leads_vec_appendix_power_power_supply_module).
+To configure the power supply module, see the [Appendix](leads_vec_appendix_power_power_supply_module).
 
 ## Connect the Accelerometer
 
