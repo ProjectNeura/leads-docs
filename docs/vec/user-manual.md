@@ -10,7 +10,7 @@ This user manual is written in steps in order.
 
 The voltage sensor is theoretically a voltage distributor. Connect the two measuring ends with the battery in parallel.
 
-![voltage-sensor](../_static/voltage-sensor.png)
+![voltage-sensor](../_static/voltage-sensor-wiring.png)
 
 Detailed specs of the voltage sensor can be found in the [Appendix](leads_vec_appendix_power_voltage_sensor).
 
@@ -18,7 +18,7 @@ Detailed specs of the voltage sensor can be found in the [Appendix](leads_vec_ap
 
 If I can still keep up with the fashion, wheel speed sensors should be 3 or 4 Hall switches that each has 3 pins.
 
-![wheel-speed-sensors](../_static/wheel-speed-sensors.jpg)
+![wheel-speed-sensors](../_static/wheel-speed-sensors-wiring.jpg)
 
 You must connect the wheel speed sensors to the designated pins. You can find the pinout diagrams for Arduino in the
 [Appendix](leads_vec_appendix_arduino). You do not need all 5 sensors. A three-wheel vehicle would have 3 sensors, and
@@ -37,10 +37,9 @@ To configure the power supply module, see the [Appendix](leads_vec_appendix_powe
 
 ## Connect the Accelerometer
 
-- BNO085 Gnd to board Gnd
-- BNO085 SCL to board TX
-- BNO085 SDA to board RX
-- BNO085 P1 to board 3.3V
+Wiring up the BNO085 in UART RVC is similar to UART.
+
+![accelerometer-wiring](../_static/accelerometer-wiring.png)
 
 ## Install the Operating System for the Raspberry Pi
 
