@@ -8,3 +8,6 @@ throughout the development, it has become an indivisible part of LEADS. It works
 template of how to make use of the framework.
 
 To get started, read [this](https://github.com/ProjectNeura/LEADS) first.
+
+For customization, you would replace the [devices module](leads_vec.devices) or even the [main module](leads_vec.cli).
+See [here](https://github.com/ProjectNeura/LEADS?tab=readme-ov-file#specify-a-devices-module).
