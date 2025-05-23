@@ -297,9 +297,9 @@ For example, if the dynamic symbol has been determined to be "/dev/ttyACM0", you
 pip-leads install --upgrade leads
 ```
 
-:::{info}
+:::{tip}
 Since version `0.9.6`, you may need to manually grant permission for the LTM system if you see a debug message saying
-`LTM permission NOT OK: /usr/local/leads/venv/lib/python3.12/site-packages/leads/_ltm/core`
+`LTM permission NOT OK: /usr/local/leads/venv/lib/python3.12/site-packages/leads/_ltm/core`.
 
 ```shell
 sudo su
