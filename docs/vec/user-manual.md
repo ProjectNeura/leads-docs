@@ -375,12 +375,12 @@ Create a configuration file.
 
 ```json
 {
-   "comm_addr": "127.0.0.1",
-   "save_data": true,
-   "car_width": 2,
-   "car_length": 1,
-   "car_mass": 400,
-   "car_center_of_mass": 0.25
+  "comm_addr": "127.0.0.1",
+  "save_data": true,
+  "car_width": 2,
+  "car_length": 1,
+  "car_mass": 400,
+  "car_center_of_mass": 0.25
 }
 ```
 
