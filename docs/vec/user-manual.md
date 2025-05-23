@@ -112,7 +112,7 @@ sudo su
 
 Follow [this](https://github.com/ProjectNeura/LEADS?tab=readme-ov-file#leads) section to install everything.
 
-If success, you should see a similar output.
+If successful, you should see a similar output.
 
 ```shell
 [Level.INFO: 1] [<module>] [2024-05-11 20:32:26.899024] LEADS VeC
@@ -291,11 +291,22 @@ ls -l /dev/serial/by-id/
 For example, if the dynamic symbol has been determined to be "/dev/ttyACM0", you will find something similar to
 `usb-FTDI_FT232R_USB_UART_AI03AC70-if00-port0 -> /dev/ttyACM0`.
 
-## Update LEADS
+## Upgrade LEADS
 
 ```shell
 pip-leads install --upgrade leads
 ```
+
+:::{info}
+Since version `0.9.6`, you may need to manually grant permission for the LTM system if you see a debug message saying
+`LTM permission NOT OK: /usr/local/leads/venv/lib/python3.12/site-packages/leads/_ltm/core`
+
+```shell
+sudo su
+chmod 666 /usr/local/leads/venv/lib/python3.12/site-packages/leads/_ltm/core
+```
+
+:::
 
 ## Start the Program
 
