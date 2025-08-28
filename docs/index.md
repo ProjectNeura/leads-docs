@@ -54,7 +54,7 @@ After that, we run LEADS VeC Data Processor with a customized workflow configura
 Should you find our work helpful to you, please cite our publication.
 
 ```bibtex
-@misc{fu2024leadslightweightembeddedassisted,
+@misc{fu2024leads,
     title = {LEADS: Lightweight Embedded Assisted Driving System},
     author = {Tianhao Fu and Querobin Mascarenhas and Andrew Forti},
     year = {2024},
