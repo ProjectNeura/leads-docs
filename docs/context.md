@@ -9,9 +9,7 @@
 ```python
 from leads import LEADS
 
-context: LEADS = LEADS(initial_data=None,
-                       data_seq_size=100,
-                       num_laps_timed=3)
+context: LEADS = LEADS(initial_data=None, data_seq_size=100, num_laps_timed=3)
 ```
 
 There are 2 phases in a context: push and update. The push phase is when the raw data are inputted. On the other hand,
